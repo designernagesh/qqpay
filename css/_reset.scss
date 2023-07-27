@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "./variables";
+
+@font-face {
+    font-family: 'PantonFont';
+    src: url('../assets/fonts/Panton-BlackCaps.woff2') format('woff2'),
+        url('../assets/fonts/Panton-BlackCaps.woff') format('woff'),
+        url('../assets/fonts/Panton-BlackCaps.ttf') format('truetype'),
+        url('../assets/fonts/Panton-BlackCaps.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    color: #302e4d;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+p {
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #302e4d;
+    
+    &:hover {
+        text-decoration: none;
+        color: #302e4d;
+    }
+}
+
+h1, h2, h3 {
+    font-family: 'PantonFont', sans-serif;
+}
+
+h1, h2 {
+    color: #000;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @media (max-width:767px) {
+        font-size: 30px !important;
+    }
+    
+}
+h3 {
+    color: #000;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @media (max-width:767px) {
+        font-size: 22px !important;
+    }
+}
+h4 {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+h5 {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 21px 0 24px;
+    @media (max-width:767px) {
+        font-size: 18px !important;
+    }
+    
+}
+h6 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px !important;
+    @media (max-width:767px) {
+        font-size: 16px !important;
+    }
+}
+.button-filled {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal;
+    text-transform: capitalize;
+    width: 255px;
+    height: 65px;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border: 1px solid #F4770B;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #F4770B;
+    &:hover {
+        background-color: #fff;
+        color: #F4770B;
+    }
+}
+p {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+button:focus {
+    outline: 1px dotted;
+    outline: none;
+}
+.breadcrumb {
+    background-color: transparent;
+}
+.pb-120 {
+    padding-bottom: 70px;
+}
+.pt-120 {
+    padding-top: 70px;
+}
+.logowrap {
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+    background: #FFEFE3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sendMoney .logowrap {
+    background: #ffffff;
+}
+.sendMoney .single-area {
+    margin-top: 20px;
+}
+.sendMoney .highlight {
+    color: #F4770B;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.sendMoney .logowrap img {
+    width: 13px;
+}
+.logowrap img {
+    width: 20px;
+}
+
+.sub-title {
+    color: #F4770B;
+    margin: 21px 0 24px;
+    font-family: 'Inter', sans-serif;
+    @media (max-width:767px) {
+        margin: 0 0 10px
+    }
+}
+.cmn-btn {
+    padding: 10px 30px;
+    font-weight: 600;
+    text-align: center;
+    background: #F4770B;
+    color: #fff;
+    transition: .3s;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1320px;
+    }
+}

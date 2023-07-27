@@ -1,0 +1,125 @@
+
+@mixin font-color-weight($color, $weight) {
+    color: $color;
+    font-weight: $weight;
+}
+
+@mixin font-color-size($color, $size) {
+    color: $color;
+    font-size: $size;
+}
+
+@mixin font-color-size-weight($color, $size, $weight) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin font-size-weight($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin display-justify-align($display, $justify, $align) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin display-justify($display, $justify) {
+    display: $display;
+    justify-content: $justify;
+}
+
+@mixin display-align($display, $align) {
+    display: $display;
+    align-items: $align;
+}
+
+@mixin width-height($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin top-left($top, $left) {
+    top: $top;
+    left: $left;
+}
+
+@mixin button($color) {
+    color: $color;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    user-select: none;
+}
+
+@mixin button-filled($color, $bg-color) {
+    @include button($color);
+    background-color: $bg-color;
+}
+
+@mixin button-dotted($color, $bg-color) {
+    @include button($color);
+    background-color: $bg-color;
+}
+
+@mixin button-icon-filled($color, $bg-color, $icon) {
+    @include button($color);
+    padding: 10px 40px 10px 15px;
+    background: $bg-color url($icon) right 15px center no-repeat;
+}
+
+@mixin button-bordered($color, $border-color) {
+    @include button($color);
+    border: 1px solid $border-color;
+    background-color: $white;
+}
+
+@mixin button-link($color) {
+    @include button($color);
+    background: transparent;    
+}
+
+@mixin custom-select {
+    appearance: none;
+    background: url(../assets/images/arrow-down.svg) right 4px no-repeat;
+    border: none;
+    font-size: 16px;
+    background-size: 18px;
+    width: 70px;
+}
+
+@mixin custom-select-bordered {
+    appearance: none;
+    background: url(../assets/images/down-arrow-filled.svg) right 5px no-repeat;
+    border: 1px solid #CECECE;
+    border-radius: 36px;
+    font-size: 14px;
+    background-size: 10px;
+    padding: 10px 15px;
+    min-width: 130px;
+}
+
+@mixin arrow-circle {
+    border: 1px solid $platinum;
+    @include display-justify-align(flex, center, center);
+    border-radius: 100%;
+    background: $white;
+    cursor: pointer;
+    user-select: none; 
+}
+
+@mixin badge($color, $bg-color) {
+    color: $color;
+    background-color: $bg-color;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 3px;
+    display: inline-block;
+}
