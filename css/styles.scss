@@ -7,7 +7,117 @@
 button {
     @include button-filled($white, $primary-color)
 }
+.header {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    background: #FFF;
+    height: 72px;
 
+    .navbar-collapse {
+        @media (max-width:991px) {
+            background-color: #ffffff;
+            position: fixed;
+            width: 100%;
+            left: 0;
+            top: 63px;
+            padding: 20px;
+            z-index: 99;
+        }
+        
+    }
+    .logo {
+        width: 130px;
+        margin-right: 50px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .type-account {
+        @media (max-width:991px) {
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+        a {
+            font-weight: 500;
+            font-size: 18px;
+
+            &:first-child {
+                padding-right: 20px;
+                margin-right: 20px;
+                border-right: 1px solid #CCC;
+            }
+
+            &.active {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .profile-image {
+            margin-right: 10px;
+
+            img {
+                width: 35px;
+                height: 35px;
+                cursor: pointer;
+                border-radius: 50%;
+            }
+        }
+
+        .profile-select {
+            @include custom-select;
+        }
+    }
+}
+
+/* Navigation */
+.navigation {
+    margin-right: 50px;
+
+    li {
+        margin-right: 35px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            @include font-color-size-weight(#595959, 18px, 500);
+            display: block;
+            @include width-height(100%, 100%);
+            padding: 23px 0;
+            position: relative;
+            @media (max-width:991px) {
+                padding: 15px 0;
+                @include width-height(auto, 100%);
+        }
+        }
+
+        &:hover,
+        &.active {
+            a {
+                color: $primary-color;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    @include width-height(100%, 4px);
+                    background-color: $primary-color;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+/*
 .header {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     background: #FFF;
@@ -79,7 +189,7 @@ button {
     }
 }
 
-/* Navigation */
+* Navigation *
 .navigation {
     margin-right: 50px;
 
@@ -119,7 +229,7 @@ button {
             }
         }
     }
-}
+} */
 
 .icon {
     @include width-height(24px, 24px);
