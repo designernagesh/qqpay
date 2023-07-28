@@ -7,6 +7,7 @@
 button {
     @include button-filled($white, $primary-color)
 }
+
 .header {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     background: #FFF;
@@ -74,6 +75,12 @@ button {
             @include custom-select;
         }
     }
+
+    .button-filled {
+        max-width: 130px;
+        height: 40px;
+        text-align: center;
+    }
 }
 
 /* Navigation */
@@ -96,140 +103,27 @@ button {
             @media (max-width:991px) {
                 padding: 15px 0;
                 @include width-height(auto, 100%);
+            }
+            
         }
-        }
-
         &:hover,
-        &.active {
-            a {
-                color: $primary-color;
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    @include width-height(100%, 4px);
-                    background-color: $primary-color;
-                    border-radius: 10px;
-                }
-            }
-        }
-    }
-}
-/*
-.header {
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-    background: #FFF;
-    height: 72px;
-    display: flex;
-    align-items: center;
-
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .col-left {
-        display: flex;
-        align-items: center;
-    }
-
-    .col-right {
-        display: flex;
-        align-items: center;
-    }
-
-    .logo {
-        width: 130px;
-        margin-right: 50px;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    .type-account {
-        a {
-            font-weight: 500;
-            font-size: 18px;
-
-            &:first-child {
-                padding-right: 20px;
-                margin-right: 20px;
-                border-right: 1px solid #CCC;
-            }
-
             &.active {
-                color: $primary-color;
-            }
-        }
-    }
-
-    .profile {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        .profile-image {
-            margin-right: 10px;
-
-            img {
-                width: 35px;
-                height: 35px;
-                cursor: pointer;
-                border-radius: 50%;
-            }
-        }
-
-        .profile-select {
-            @include custom-select;
-        }
-    }
-}
-
-* Navigation *
-.navigation {
-    margin-right: 50px;
-
-    ul {
-        display: flex;
-    }
-
-    li {
-        margin-right: 35px;
-
-        &:last-child {
-            margin-right: 0;
-        }
-
-        a {
-            @include font-color-size-weight(#595959, 18px, 500);
-            display: block;
-            @include width-height(100%, 100%);
-            padding: 23px 0;
-            position: relative;
-        }
-
-        &:hover,
-        &.active {
-            a {
-                color: $primary-color;
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    @include width-height(100%, 4px);
-                    background-color: $primary-color;
-                    border-radius: 10px;
+                a {
+                    color: $primary-color;
+    
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        @include width-height(100%, 4px);
+                        background-color: $primary-color;
+                        border-radius: 10px;
+                    }
                 }
             }
-        }
     }
-} */
+}
 
 .icon {
     @include width-height(24px, 24px);
@@ -267,25 +161,6 @@ button {
     }
     .selector {
         position: relative;
-
-        &.dropdown {
-            button {
-                &::after {
-                    content: "";
-                    position: absolute;
-                    display: block;
-                    pointer-events: none;
-                    border-bottom: 2px solid #0c266c;
-                    border-right: 2px solid #0c266c;
-                    height: 13px;
-                    right: 15px;
-                    top: auto;
-                    width: 13px;
-                    transform: rotate(45deg);
-                    margin-top: -6px;
-                }
-            }
-        }
         button {
             display: flex;
             align-items: center;
@@ -294,6 +169,20 @@ button {
             background-color: #fff;
             padding: 15px 45px 15px 15px;
             border-radius: 10px;
+            &::after {
+                content: "";
+                position: absolute;
+                display: block;
+                pointer-events: none;
+                border-bottom: 2px solid #0c266c;
+                border-right: 2px solid #0c266c;
+                height: 13px;
+                right: 15px;
+                top: auto;
+                width: 13px;
+                transform: rotate(45deg);
+                margin-top: -6px;
+            }
         }
     }
     
@@ -312,14 +201,7 @@ button {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 20px 30px;
-
-        input {
-            border: none;
-            width: 90%;
-            border-radius: 5px;
-            height: 45px;
-        }
+        padding: 20px 30px
     }
 
     .currency-area .right-side .nice-select {
@@ -870,6 +752,9 @@ dl.dropdown-country dt span:nth-child(3) {
     background: #fff url(../assets/images/innerpage-banner.png) left top no-repeat;
     background-size: contain;
     height: 335px;
+    @media (max-width:767px) {
+        background-size: cover;
+    }
 
     .container,
     .banner-content {
@@ -932,57 +817,6 @@ dl.dropdown-country dt span:nth-child(3) {
 /*  ==================================
     [ Responsive Section Starts Here ] */
 
-@media (max-width: 600px) {
-    .header {
-        height: 100vh;
-        align-items: flex-start;
-        padding: 20px;
-
-        .container {
-            align-items: flex-start;
-            flex-direction: column;
-        }
-
-        .col-left {
-            margin-bottom: 30px;
-        }
-
-        .col-right {
-            align-items: flex-start;
-            flex-direction: column;
-            width: 100%;
-        }
-    }
-
-    .navigation {
-        order: 2;
-        margin-right: 0;
-        width: 100%;
-
-        ul {
-            flex-direction: column;
-        }
-
-        li {
-            margin-right: 0;
-
-            a::after {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                height: 1px;
-                background-color: #CCC;
-                border-radius: 10px;
-            }
-        }
-    }
-
-    .header .profile {
-        order: 1;
-    }
-}
 
 .custom-select {
     position: relative;
