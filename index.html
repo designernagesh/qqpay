@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
       <symbol
         id="pin"
         width="20"
@@ -56,14 +56,14 @@
           fill="#575757"
         />
       </symbol>
-    </svg>
+    </svg> -->
 
     <!-- navbar start -->
     <header class="header">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light py-0">
-          <a class="navbar-brand logo" href="#">
-            <img src="./assets/images/logo.svg" alt="logo" />
+          <a class="navbar-brand logo" href="index.html">
+            <img src="./assets/images/logo.svg" alt="QQ Pay Logo" />
           </a>
           <button
             class="navbar-toggler"
@@ -144,8 +144,8 @@
                       provides you the control on payment flexibility.
                     </p>
                   </div>
-                  <div class="bottom-area d-xxl-flex">
-                    <a class="cmn-btn" href="/sign-up">Open a Free Account</a>
+                  <div class="bottom-area">
+                    <a class="button-filled" href="/sign-up">Open a Free Account</a>
                   </div>
                 </div>
               </div>
@@ -155,7 +155,6 @@
                     <div class="currency-area">
                       <div class="left-side">
                         <strong class="mdr">You send</strong>
-                        <br />
                         <input
                           type="text"
                           class="p-2"
@@ -164,7 +163,7 @@
                       </div>
                       <div class="right-side">
                         <div class="selector">
-                          <button class="bg-white">
+                          <button>
                             <img src="assets/images/Myanmar.png" />
                             <span class="fw-bold text-dark"
                               >Malaysia (MYR)</span
@@ -173,65 +172,87 @@
                         </div>
                       </div>
                     </div>
+
                     <div class="calculation">
-                      <div class="head-area d-flex align-items-center">
-                        <div class="logowrap mr-2">
-                          <img src="assets/images/calculator.png" />
-                        </div>
-                        <span class="mdr highlight">Show calculation</span>
-                      </div>
-                      <div class="calculation-details">
-                        <div class="single-area d-flex align-items-center">
-                          <div class="left-area">
-                            <div class="logowrap mr-2">
-                              <img src="assets/images/minus.png" />
+                      <table cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <td>
+                            <div class="icon">
+                              <svg class="icon-calculator">
+                                <use xlink:href="assets/svgdefs.svg#calculator"></use>
+                              </svg>
                             </div>
-                            <span class="mdr">10.04 USD</span>
-                          </div>
-                          <div class="right-area">
-                            <span class="mdr">Our fee</span>
-                          </div>
-                        </div>
-                        <div class="single-area d-flex align-items-center">
-                          <div class="left-area">
-                            <div class="logowrap mr-2">
-                              <img src="assets/images/equalto.png" />
+                          </td>
+                          <td colspan="2">
+                            <strong>Show calculation</strong>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="icon">
+                              <svg class="icon-minus">
+                                <use xlink:href="assets/svgdefs.svg#minus"></use>
+                              </svg>
                             </div>
-                            <span class="mdr">989.96 USD</span>
-                          </div>
-                          <div class="right-area">
-                            <span class="mdr">We’ll Convert</span>
-                          </div>
-                        </div>
-                        <div class="single-area d-flex align-items-center">
-                          <div class="left-area">
-                            <div class="logowrap mr-2">
-                              <img src="assets/images/calculator.png" />
+                          </td>
+                          <td>
+                            10.04 USD
+                          </td>
+                          <td>
+                            Our fee
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="icon">
+                              <svg class="icon-equal">
+                                <use xlink:href="assets/svgdefs.svg#equal"></use>
+                              </svg>
                             </div>
-                            <span class="mdr">1.3947</span>
-                          </div>
-                          <div class="right-area">
-                            <span class="mdr highlight">Paylio Rate</span>
-                          </div>
-                        </div>
-                      </div>
+                          </td>
+                          <td>
+                            989.96 USD
+                          </td>
+                          <td>
+                            We’ll Convert
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="icon">
+                              <svg class="icon-multiply">
+                                <use xlink:href="assets/svgdefs.svg#multiply"></use>
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            1.3947
+                          </td>
+                          <td>
+                            Paylio Rate
+                          </td>
+                        </tr>
+                      </table>
                     </div>
-                    <div class="currency-area">
+
+                    <div class="currency-area mb-4">
                       <div class="left-side">
-                        <span class="mdr">Recipient gets</span>
+                        <strong>Recipient Gets</strong>
                         <h5 class="mt-1 mb-0">1,380.69</h5>
                       </div>
                       <div class="right-side recipient">
                         <div class="selector dropdown">
-                          <button class="bg-white">
+                          <button>
                             <img src="assets/images/India.png" />
                             <span class="fw-bold text-dark">India (INR)</span>
                           </button>
                         </div>
                       </div>
                     </div>
-                    <div class="btn-area mt-4 text-center">
-                      <button type="submit" class="cmn-btn btn-lg">
+                    <div class="d-flex justify-content-center">
+                      <button type="submit" class="button-filled">
                         Get Started
                       </button>
                     </div>
@@ -250,7 +271,7 @@
       <div class="row">
         <div class="col-md-10 mx-auto">
           <div class="counter-section mb-0">
-            <div class="details w-100">
+            <div class="details d-flex justify-content-around">
               <div class="single-area">
                 <h2 class="counter">50+</h2>
                 <p>Supported Currencies</p>
@@ -300,8 +321,10 @@
               <div class="row cus-mar">
                 <div class="col-sm-6 col-6">
                   <div class="single-item text-center">
-                    <div class="logowrap mx-auto">
-                      <img src="assets/images/global.png" />
+                    <div class="icon mx-auto">
+                      <svg class="icon-global">
+                        <use xlink:href="assets/svgdefs.svg#global"></use>
+                      </svg>
                     </div>
                     <h5>Global Presence</h5>
                     <p>
@@ -311,8 +334,10 @@
                 </div>
                 <div class="col-sm-6 col-6">
                   <div class="single-item text-center">
-                    <div class="logowrap mx-auto">
-                      <img src="assets/images/flash.png" />
+                    <div class="icon mx-auto">
+                      <svg class="icon-fast">
+                        <use xlink:href="assets/svgdefs.svg#fast"></use>
+                      </svg>
                     </div>
                     <h5>Fast Transfer</h5>
                     <p>
@@ -322,8 +347,10 @@
                 </div>
                 <div class="col-sm-6 col-6">
                   <div class="single-item text-center">
-                    <div class="logowrap mx-auto">
-                      <img src="assets/images/shield.png" />
+                    <div class="icon mx-auto">
+                      <svg class="icon-safe">
+                        <use xlink:href="assets/svgdefs.svg#safe"></use>
+                      </svg>
                     </div>
                     <h5>Safe & Reliable</h5>
                     <p>Industry-leading technology that moves millions annually.</p>
@@ -331,8 +358,10 @@
                 </div>
                 <div class="col-sm-6 col-6">
                   <div class="single-item text-center">
-                    <div class="logowrap mx-auto">
-                      <img src="assets/images/phone.png" />
+                    <div class="icon mx-auto">
+                      <svg class="icon-mobile">
+                        <use xlink:href="assets/svgdefs.svg#mobile"></use>
+                      </svg>
                     </div>
                     <h5>Mobility 24/7</h5>
                     <p>Your money gets transferred while you are on-the-go.</p>
@@ -361,8 +390,10 @@
           <div class="row cus-mar">
             <div class="col-xl-3 col-sm-6 col-6">
               <div class="single-item text-center">
-                <div class="logowrap mx-auto">
-                  <img src="assets/images/enrollment-icon.png" />
+                <div class="icon mx-auto">
+                  <svg class="icon-register">
+                    <use xlink:href="assets/svgdefs.svg#register"></use>
+                  </svg>
                 </div>
                 <h5>Register for free</h5>
                 <p>Simply sign up online for free and verify your identity</p>
@@ -370,8 +401,10 @@
             </div>
             <div class="col-xl-3 col-sm-6 col-6">
               <div class="single-item text-center">
-                <div class="logowrap mx-auto">
-                  <img src="assets/images/data-transfer-icon.png" />
+                <div class="icon mx-auto">
+                  <svg class="icon-transfer">
+                    <use xlink:href="assets/svgdefs.svg#transfer"></use>
+                  </svg>
                 </div>
                 <h5>Set up your transfer</h5>
                 <p>Add a recipient's details and choose which currency ...</p>
@@ -379,8 +412,10 @@
             </div>
             <div class="col-xl-3 col-sm-6 col-6">
               <div class="single-item text-center">
-                <div class="logowrap mx-auto">
-                  <img src="assets/images/online-card-payment-icon.png" />
+                <div class="icon mx-auto">
+                  <svg class="icon-payment">
+                    <use xlink:href="assets/svgdefs.svg#payment"></use>
+                  </svg>
                 </div>
                 <h5>Make your payment</h5>
                 <p>Send us your funds with a bank transfer and we'll notify..</p>
@@ -388,8 +423,10 @@
             </div>
             <div class="col-xl-3 col-sm-6 col-6">
               <div class="single-item text-center">
-                <div class="logowrap mx-auto">
-                  <img src="assets/images/document-approve-icon.png" />
+                <div class="icon mx-auto">
+                  <svg class="icon-done">
+                    <use xlink:href="assets/svgdefs.svg#done"></use>
+                  </svg>
                 </div>
                 <h5>You're all done!</h5>
                 <p>We inform you when the money has been sent and can also ...</p>
@@ -416,8 +453,10 @@
           <div class="row cus-mar">
             <div class="col-xl-3 col-6">
               <div class="single-item text-center">
-                <div class="logowrap mx-auto">
-                  <img src="assets/images/send-money-icon.png" />
+                <div class="icon mx-auto">
+                  <svg class="icon-payments">
+                    <use xlink:href="assets/svgdefs.svg#payments"></use>
+                  </svg>
                 </div>
                 <h5>Payments</h5>
                 <p>
@@ -430,8 +469,10 @@
             </div>
             <div class="col-xl-3 col-6">
               <div class="single-item text-center">
-                <div class="logowrap mx-auto">
-                  <img src="assets/images/add-money-icon.png" />
+                <div class="icon mx-auto">
+                  <svg class="icon-collections">
+                    <use xlink:href="assets/svgdefs.svg#collections"></use>
+                  </svg>
                 </div>
                 <h5>Collections</h5>
                 <p>
@@ -444,8 +485,10 @@
             </div>
             <div class="col-xl-3 col-6">
               <div class="single-item text-center">
-                <div class="logowrap mx-auto">
-                  <img src="assets/images/money-transactions-icon.png" />
+                <div class="icon mx-auto">
+                  <svg class="icon-conversions">
+                    <use xlink:href="assets/svgdefs.svg#conversions"></use>
+                  </svg>
                 </div>
                 <h5>Conversions</h5>
                 <p>
@@ -458,8 +501,10 @@
             </div>
             <div class="col-xl-3 col-6">
               <div class="single-item text-center">
-                <div class="logowrap mx-auto">
-                  <img src="assets/images/global-money-icon.png" />
+                <div class="icon mx-auto">
+                  <svg class="icon-global-account">
+                    <use xlink:href="assets/svgdefs.svg#global-account"></use>
+                  </svg>
                 </div>
                 <h5>Global Account</h5>
                 <p>
@@ -573,8 +618,11 @@
     <!-- footer starts -->
     <footer class="footer">
       <div class="container">
-        <h6 class="sub-title text-center">Send Money</h6>
-        <h2 class="title text-center">We work nearly everywhere</h2>
+        <div class="section-header">
+          <h6 class="sub-title">Send Money</h6>
+          <h2 class="title">We work nearly everywhere</h2>
+        </div>
+        
         <form>
           <dl id="country-select" class="dropdown-country">
             <dt>
@@ -2027,11 +2075,11 @@
           </div>
           <nav class="menu">
             <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Send Money</a></li>
-              <li><a href="">FAQs</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="send-money.html">Send Money</a></li>
+              <li><a href="faq.html">FAQs</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -2051,9 +2099,9 @@
           makes no warranty, express or implied, concerning the suitability,
           completeness, quality or exactness of the information and models
           provided in this website. For further clarification, please read
-          <a href="">Full Disclaimer</a>,
-          <a href="">Money Laundering Statement</a> and
-          <a href="">Privacy Policy</a> statements of QQPay Fintech Pte Ltd.
+          <a href="disclaimer.html">Full Disclaimer</a>,
+          <a href="money-laundering.html">Money Laundering Statement</a> and
+          <a href="privacy-policy.html">Privacy Policy</a> statements of QQPay Fintech Pte Ltd.
         </p>
 
         <p>&copy; QQPay 2022. All Rights Reserverd.</p>
