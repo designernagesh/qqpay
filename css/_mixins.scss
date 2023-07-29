@@ -41,9 +41,25 @@
     height: $height;
 }
 
+@mixin top-left($top, $left) {
+    top: $top;
+    left: $left;
+}
+
+@mixin top-right($top, $right) {
+    top: $top;
+    right: $right;
+}
+
+@mixin top-right-left($top, $right, $left) {
+    top: $top;
+    right: $right;
+    left: $left;
+}
+
 @mixin button($color) {
     color: $color;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     padding: 15px 45px;
     border: none;
@@ -58,7 +74,7 @@
     background-color: $bg-color;
 
     &:hover {
-        background-color: #fff;
-        color: $primary-color;
+        background-color: #4d4d4f;
+        color: $white;
     }
 }
