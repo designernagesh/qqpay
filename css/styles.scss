@@ -418,12 +418,35 @@
     transform: translateZ(10px);
     color: $white;
 
-    h2 {
-        font-size: 30px
+    .icon {
+        background-color: transparent;
+        @include width-height(100%, 100%);
+
+        svg {
+            @include width-height(100px, 100px);
+        }
     }
 
-    .text {
+    a {
+        &:hover {
+            color: $white;
+        }
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    .des {
         color: #FFF;
+        text-align: left;
+        font-size: 18px;
+        line-height: 130%;
+    }
+
+    .button-filled {
+        @include button-filled($white, $primary-color);
+        padding: 10px 45px;
     }
 
 }

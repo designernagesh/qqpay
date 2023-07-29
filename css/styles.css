@@ -571,10 +571,44 @@ p {
   transform: translateZ(10px);
   color: #FFF;
 }
+.support-section .icon {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+}
+.support-section .icon svg {
+  width: 100px;
+  height: 100px;
+}
+.support-section a:hover {
+  color: #FFF;
+}
 .support-section h2 {
   font-size: 30px;
 }
-.support-section .text {
+.support-section .des {
+  color: #FFF;
+  text-align: left;
+  font-size: 18px;
+  line-height: 130%;
+}
+.support-section .button-filled {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 45px;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: inline-block;
+  background-color: #F4770B;
+  padding: 10px 45px;
+}
+.support-section .button-filled:hover {
+  background-color: #4d4d4f;
   color: #FFF;
 }
 
