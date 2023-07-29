@@ -27,7 +27,8 @@ a:hover {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "PantonFont", sans-serif;
 }
 
@@ -58,7 +59,6 @@ h3 {
 }
 
 h4 {
-  font-family: "Inter", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -345,6 +345,7 @@ p {
 */
 .sub-title {
   color: #F4770B;
+  font-weight: 700;
   margin: 0 5px;
 }
 @media (max-width: 767px) {
@@ -522,6 +523,26 @@ p {
   font-size: 18px;
 }
 
+/* Support Section Styles
+*/
+.support-section {
+  border-radius: 20px;
+  background-color: #404040;
+  box-shadow: 2px 3.464px 24px 0 rgba(106, 105, 194, 0.25);
+  position: relative;
+  padding: 30px 50px;
+  margin-top: -165px;
+  margin-bottom: 50px;
+  transform: translateZ(10px);
+  color: #FFF;
+}
+.support-section h2 {
+  font-size: 30px;
+}
+.support-section .text {
+  color: #FFF;
+}
+
 /* 
     Signup Section Styles 
 */
@@ -591,8 +612,25 @@ p {
 
 /* Testimonial Styles 
 */
+.testimonials {
+  padding-bottom: 70px;
+}
+
 .testimonial-carousel {
   padding-bottom: 35px;
+}
+.testimonial-carousel .icon-area {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+.testimonial-carousel .icon-area img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .testimonial-carousel .slick-arrow {
   position: absolute;
@@ -607,6 +645,7 @@ p {
   border: none;
   z-index: 1;
   text-indent: -1000000px;
+  cursor: pointer;
 }
 .testimonial-carousel button.slick-prev.slick-arrow {
   left: calc(50% - 85px);
@@ -677,6 +716,7 @@ p {
 .innerpage-banner .breadcrumb {
   font-size: 18px;
   align-items: center;
+  text-transform: capitalize;
 }
 .innerpage-banner .breadcrumb a {
   color: #FFF;
@@ -691,7 +731,7 @@ p {
   position: absolute;
   border-radius: 50%;
   background-color: #FFF;
-  bottom: 2px;
+  bottom: 9px;
   margin-left: 6px;
 }
 
@@ -785,8 +825,8 @@ p {
   position: absolute;
   width: calc(100% - 100px);
   height: calc(100% - 100px);
-  top: 0;
-  right: 0;
+  top: 50px;
+  right: 50px;
   left: 50px;
   margin: 0 auto;
   border-radius: 30px;
@@ -981,7 +1021,7 @@ p {
 }
 .contact-info__list li {
   color: #FFF;
-  font-size: 24px;
+  font-size: 18px;
   display: block;
 }
 .contact-info__list li i {
@@ -1017,6 +1057,72 @@ p {
     padding: 5rem !important;
   }
 }
+/*  [ Disclaimer, Laundering Statement & Privacy Policy Pages Styles Starts Here ] 
+*/
+.contact-section {
+  text-align: center;
+}
+.contact-section .title {
+  font-size: 42px;
+  margin-bottom: 5px;
+}
+.contact-section p {
+  line-height: 130%;
+  font-size: 18px;
+}
+.contact-section a {
+  color: #F4770B;
+}
+.contact-section a:hover {
+  color: #000;
+}
+.contact-section .button-filled {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 45px;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: inline-block;
+  background-color: #F4770B;
+  padding: 15px 35px;
+}
+.contact-section .button-filled:hover {
+  background-color: #4d4d4f;
+  color: #FFF;
+}
+
+.privacy-policy article,
+.disclaimer article {
+  border: 1px solid #D9D9D9;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.privacy-policy article h3,
+.disclaimer article h3 {
+  color: #F4770B;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.privacy-policy article a,
+.disclaimer article a {
+  color: #F4770B;
+}
+.privacy-policy article a:hover,
+.disclaimer article a:hover {
+  color: #000;
+}
+.privacy-policy article li,
+.disclaimer article li {
+  list-style-type: disc;
+  margin-bottom: 15px;
+}
+
 /* 
     Check the Code 
 */
@@ -1024,8 +1130,7 @@ p {
   width: 100%;
 }
 
-.select-btn,
-li {
+.select-btn {
   display: flex;
   align-items: center;
   cursor: pointer;

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QQ Pay | Home Page</title>
+    <title>QQ Pay | Disclaimer</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/icons.svg" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -12,6 +13,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -20,8 +23,8 @@
     <header class="header">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light py-0">
-          <a class="navbar-brand logo" href="index.html">
-            <img src="./assets/images/logo.svg" alt="QQ Pay Logo" />
+          <a class="navbar-brand logo" href="#">
+            <img src="./assets/images/logo.svg" alt="logo" />
           </a>
           <button
             class="navbar-toggler"
@@ -36,12 +39,12 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto type-account">
+            <ul class="navbar-nav mr-4 type-account">
               <a href="#" class="active">Personal</a>
               <a href="#">Business</a>
             </ul>
             <ul class="navbar-nav ml-auto navigation">
-              <li class="active">
+              <li>
                 <a href="index.html">
                   <span class="nav-item">Home</span>
                 </a>
@@ -77,545 +80,51 @@
     <!-- navbar ends -->
 
     <!-- banner starts -->
-    <section class="banner-section index">
-      <div class="overlay">
-        <div class="shape-area">
-          <img src="" />
-        </div>
+    <section class="innerpage-banner">
+      <div class="container">
+        <!-- Banner Content -->
         <div class="banner-content">
-          <div class="container">
-            <div class="content-shape">
-              <img src="" />
-            </div>
-            <div class="row justify-content-between">
-              <div class="col-lg-6 col-md-6">
-                <div class="main-content">
-                  <div class="top-area section-text">
-                    <h5 class="sub-title">Trusted by over 3M customers</h5>
-                    <h1 class="title">Send money from anywhere, anytime</h1>
-                    <p class="xlr">
-                      We remove complexities from business to individual
-                      payments whilst introducing you to fast, cost-effective
-                      international payments with greater transparency. QQPay’s
-                      attractive FX rates will further help you save big. Our
-                      digital technology driven platform is easy to use and yet
-                      provides you the control on payment flexibility.
-                    </p>
-                  </div>
-                  <div class="bottom-area">
-                    <a class="button-filled" href="/sign-up">Open a Free Account</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xxl-4 col-xl-5 col-md-6">
-                <div class="send-money">
-                  <form action="#">
-                    <div class="currency-area">
-                      <div class="left-side">
-                        <strong class="mdr">You send</strong>
-                        <input
-                          type="text"
-                          class="p-2"
-                          placeholder="Enter Amount"
-                        />
-                      </div>
-                      <div class="right-side">
-                        <div class="selector">
-                          <button>
-                            <img src="assets/images/Myanmar.png" />
-                            <span class="fw-bold text-dark"
-                              >Malaysia (MYR)</span
-                            >
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="calculation">
-                      <table cellpadding="0" cellspacing="0" width="100%">
-                        <tr>
-                          <td>
-                            <div class="icon">
-                              <svg class="icon-calculator">
-                                <use xlink:href="assets/svgdefs.svg#calculator"></use>
-                              </svg>
-                            </div>
-                          </td>
-                          <td colspan="2">
-                            <strong>Show calculation</strong>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="icon">
-                              <svg class="icon-minus">
-                                <use xlink:href="assets/svgdefs.svg#minus"></use>
-                              </svg>
-                            </div>
-                          </td>
-                          <td>
-                            10.04 USD
-                          </td>
-                          <td>
-                            Our fee
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <td>
-                            <div class="icon">
-                              <svg class="icon-equal">
-                                <use xlink:href="assets/svgdefs.svg#equal"></use>
-                              </svg>
-                            </div>
-                          </td>
-                          <td>
-                            989.96 USD
-                          </td>
-                          <td>
-                            We’ll Convert
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <td>
-                            <div class="icon">
-                              <svg class="icon-multiply">
-                                <use xlink:href="assets/svgdefs.svg#multiply"></use>
-                              </svg>
-                            </div>
-                          </td>
-                          <td>
-                            1.3947
-                          </td>
-                          <td>
-                            QQPay Rate
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
-
-                    <div class="currency-area mb-4">
-                      <div class="left-side">
-                        <strong>Recipient Gets</strong>
-                        <h5 class="mt-1 mb-0">1,380.69</h5>
-                      </div>
-                      <div class="right-side recipient">
-                        <div class="selector dropdown">
-                          <button>
-                            <img src="assets/images/India.png" />
-                            <span class="fw-bold text-dark">India (INR)</span>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                      <button type="submit" class="button-filled">
-                        Get Started
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
+          <h1 class="title text-white">disclaimer</h1>
+          <div class="breadcrumb justify-content-center">
+            <a href="">Home</a> <span class="current-page">disclaimer</span>
           </div>
         </div>
       </div>
     </section>
     <!-- banner ends -->
 
-    <!-- counter starts -->
-    <section class="container-fluid bg-white">
-      <div class="row">
-        <div class="col-md-10 mx-auto">
-          <div class="counter-section mb-0">
-            <div class="details d-flex justify-content-around">
-              <div class="single-area">
-                <h2 class="counter">50+</h2>
-                <p>Supported Currencies</p>
-              </div>
-              <div class="single-area">
-                <h2 class="counter">100+</h2>
-                <p>Available Countries</p>
-              </div>
-              <div class="single-area">
-                <h2 class="counter">70+</h2>
-                <p>Payment Methods</p>
-              </div>
-              <div class="single-area">
-                <h2 class="counter">24/7+</h2>
-                <p>Support Team</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- counter ends -->
-
-    <!-- payment solution starts -->
-    <section class="global-payment bg-white">
-      <div class="overlay pt-120 pb-120">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <div class="section-header text-center mb-5">
-                <h5 class="sub-title">Send money in a heartbeat</h5>
-                <h2 class="title">Tpayment solution on the go</h2>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xxl-6 col-xl-5 order-xl-0 order-1">
-              <div class="image-area d-rtl left-side">
-                <img
-                  src="assets/images/solution-section-img.png"
-                  alt="images"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-            <div class="col-xxl-6 col-xl-7">
-              <div class="row cus-mar">
-                <div class="col-sm-6 col-6">
-                  <div class="single-item text-center">
-                    <div class="icon mx-auto">
-                      <svg class="icon-global">
-                        <use xlink:href="assets/svgdefs.svg#global"></use>
-                      </svg>
-                    </div>
-                    <h5>Global Presence</h5>
-                    <p>
-                      Working with financial institutions & service providers located worldwide.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-6">
-                  <div class="single-item text-center">
-                    <div class="icon mx-auto">
-                      <svg class="icon-fast">
-                        <use xlink:href="assets/svgdefs.svg#fast"></use>
-                      </svg>
-                    </div>
-                    <h5>Fast Transfer</h5>
-                    <p>
-                     Cross Border Payment On Real Time Basis.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-6">
-                  <div class="single-item text-center">
-                    <div class="icon mx-auto">
-                      <svg class="icon-safe">
-                        <use xlink:href="assets/svgdefs.svg#safe"></use>
-                      </svg>
-                    </div>
-                    <h5>Safe & Reliable</h5>
-                    <p>Industry-leading technology that moves millions annually.</p>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-6">
-                  <div class="single-item text-center">
-                    <div class="icon mx-auto">
-                      <svg class="icon-mobile">
-                        <use xlink:href="assets/svgdefs.svg#mobile"></use>
-                      </svg>
-                    </div>
-                    <h5>Mobility 24/7</h5>
-                    <p>Your money gets transferred while you are on-the-go.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- payment solution ends -->
-
-    <!-- how it works starts -->
-    <section class="how-it-works bg-white">
-      <div class="overlay pb-120">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-9">
-              <div class="section-header text-center mb-5">
-                <h5 class="sub-title">How it works?</h5>
-                <h2 class="title">Just few steps to start</h2>
-              </div>
-            </div>
-          </div>
-          <div class="row cus-mar">
-            <div class="col-xl-3 col-sm-6 col-6">
-              <div class="single-item text-center">
-                <div class="icon mx-auto">
-                  <svg class="icon-register">
-                    <use xlink:href="assets/svgdefs.svg#register"></use>
-                  </svg>
-                </div>
-                <h5>Register for free</h5>
-                <p>Simply sign up online for free and verify your identity</p>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 col-6">
-              <div class="single-item text-center">
-                <div class="icon mx-auto">
-                  <svg class="icon-transfer">
-                    <use xlink:href="assets/svgdefs.svg#transfer"></use>
-                  </svg>
-                </div>
-                <h5>Set up your transfer</h5>
-                <p>Add a recipient's details and choose which currency ...</p>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 col-6">
-              <div class="single-item text-center">
-                <div class="icon mx-auto">
-                  <svg class="icon-payment">
-                    <use xlink:href="assets/svgdefs.svg#payment"></use>
-                  </svg>
-                </div>
-                <h5>Make your payment</h5>
-                <p>Send us your funds with a bank transfer and we'll notify..</p>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 col-6">
-              <div class="single-item text-center">
-                <div class="icon mx-auto">
-                  <svg class="icon-done">
-                    <use xlink:href="assets/svgdefs.svg#done"></use>
-                  </svg>
-                </div>
-                <h5>You're all done!</h5>
-                <p>We inform you when the money has been sent and can also ...</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- how it works ends -->
-
-    <!-- all payment in one place starts -->
-    <section class="our-solutions bg-white">
-      <div class="overlay pt-120 pb-120">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <div class="section-header dark-sec text-center mb-5">
-                <h5 class="sub-title">High speeds. Low fees. No hassle.</h5>
-                <h2 class="title">All Payments In One Place</h2>
-              </div>
-            </div>
-          </div>
-          <div class="row cus-mar">
-            <div class="col-xl-3 col-6">
-              <div class="single-item text-center">
-                <div class="icon mx-auto">
-                  <svg class="icon-payments">
-                    <use xlink:href="assets/svgdefs.svg#payments"></use>
-                  </svg>
-                </div>
-                <h5>Payments</h5>
-                <p>
-                  Maecenas et augue urna. Etiam libero purus, ornare ut maximus
-                  vel, egestas ut massa. Aliquam mollis magna metus. Vivamus
-                  rhoncus a ex nec varius. Nulla ornare rhoncus quam, vel
-                  fermentum tellus venenatis eu.
-                </p>
-              </div>
-            </div>
-            <div class="col-xl-3 col-6">
-              <div class="single-item text-center">
-                <div class="icon mx-auto">
-                  <svg class="icon-collections">
-                    <use xlink:href="assets/svgdefs.svg#collections"></use>
-                  </svg>
-                </div>
-                <h5>Collections</h5>
-                <p>
-                  Maecenas et augue urna. Etiam libero purus, ornare ut maximus
-                  vel, egestas ut massa. Aliquam mollis magna metus. Vivamus
-                  rhoncus a ex nec varius. Nulla ornare rhoncus quam, vel
-                  fermentum tellus venenatis eu.
-                </p>
-              </div>
-            </div>
-            <div class="col-xl-3 col-6">
-              <div class="single-item text-center">
-                <div class="icon mx-auto">
-                  <svg class="icon-conversions">
-                    <use xlink:href="assets/svgdefs.svg#conversions"></use>
-                  </svg>
-                </div>
-                <h5>Conversions</h5>
-                <p>
-                  Maecenas et augue urna. Etiam libero purus, ornare ut maximus
-                  vel, egestas ut massa. Aliquam mollis magna metus. Vivamus
-                  rhoncus a ex nec varius. Nulla ornare rhoncus quam, vel
-                  fermentum tellus venenatis eu.
-                </p>
-              </div>
-            </div>
-            <div class="col-xl-3 col-6">
-              <div class="single-item text-center">
-                <div class="icon mx-auto">
-                  <svg class="icon-global-account">
-                    <use xlink:href="assets/svgdefs.svg#global-account"></use>
-                  </svg>
-                </div>
-                <h5>Global Account</h5>
-                <p>
-                  Maecenas et augue urna. Etiam libero purus, ornare ut maximus
-                  vel, egestas ut massa. Aliquam mollis magna metus. Vivamus
-                  rhoncus a ex nec varius. Nulla ornare rhoncus quam, vel
-                  fermentum tellus venenatis eu.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- all payment in one place ends -->
-
-    <!-- testimonials starts -->
-    <section class="testimonials bg-white">
-      <div class="overlay pt-120 pb-120">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-6">
-              <div class="section-header text-center">
-                <h5 class="sub-title">Testimonials</h5>
-                <h2 class="title">What Our Customers Say</h2>
-                <p>
-                  245m+ happy clients all around the world. Don’t just take our
-                  word for it
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="testimonial-carousel">
-            <div class="item">
-              <div class="item-wrap">
-                <div
-                  class="profile-area d-flex align-items-center justify-content-between"
-                >
-                  <div class="d-flex align-items-center">
-                    <div class="icon-area">
-                      <img src="./assets/images/cust1.jpg" alt="" />
-                    </div>
-                    <div class="text-area">
-                      <h5>Aspen Press</h5>
-                      <p>Student</p>
-                    </div>
-                  </div>
-                  <img src="assets/images/quotation-mark-right-icon.png" />
-                </div>
-                <p>
-                  I like the remittance platform as there are many value added features and the transfer took minutes to deliver the funds".
-                </p>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="item-wrap">
-                <div
-                  class="profile-area d-flex align-items-center justify-content-between"
-                >
-                  <div class="d-flex align-items-center">
-                    <div class="icon-area">
-                      <img src="./assets/images/cust3.jpg" alt="" />
-                    </div>
-                    <div class="text-area">
-                      <h5>John Carter</h5>
-                      <p>Designer</p>
-                    </div>
-                  </div>
-                  <img src="assets/images/quotation-mark-right-icon.png" />
-                </div>
-                <p>
-                  The transfer was fast and the pickup locations were easily accessible in the whole country.
-                </p>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="item-wrap">
-                <div
-                  class="profile-area d-flex align-items-center justify-content-between"
-                >
-                  <div class="d-flex align-items-center">
-                    <div class="icon-area">
-                      <img src="./assets/images/cust2.jpg" alt="" />
-                    </div>
-                    <div class="text-area">
-                      <h5>Mohd. Sufian</h5>
-                      <p>Businessman</p>
-                    </div>
-                  </div>
-                  <img src="assets/images/quotation-mark-right-icon.png" />
-                </div>
-                <p>
-                  “User-friendly and reliable apps. Strongly recommend to anyone who wish to have a more convenient way to remit cross border".
-                </p>
-              </div>
-            </div>
-
-
-            <div class="item">
-              <div class="item-wrap">
-                <div
-                  class="profile-area d-flex align-items-center justify-content-between"
-                >
-                  <div class="d-flex align-items-center">
-                    <div class="icon-area">
-                      <img src="./assets/images/cust4.jpg" alt="" />
-                    </div>
-                    <div class="text-area">
-                      <h5>Thomas Kadus</h5>
-                      <p>Traveller</p>
-                    </div>
-                  </div>
-                  <img src="assets/images/quotation-mark-right-icon.png" />
-                </div>
-                <p>
-                  The transfer was fast and the pickup locations were easily accessible in the whole country. Truly lightning fast transfer.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- testimonials ends -->
-
-    <!-- footer starts -->
-    <footer class="footer">
-
-       <!-- support section starts -->
-    <section class="container-fluid">
-      <div class="row">
-        <div class="col-md-10 mx-auto">
-          <div class="support-section">
-            <h2 class="title">Global support for your assistance</h2>
-                <p class="text">We don’t do complicated, automated systems. We have offices around the world, and we’re here to help you whenever you need it. Email us at <a href="mailto:support@qqpay.io">support@qqpay.io</a> for any inquiries.
-                </p>
-                <a href="faq.html" class="button-filled">See FAQs</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- support section ends -->
-
+    <section class="disclaimer">
       <div class="container">
-        <div class="section-header">
-          <h6 class="sub-title">Send Money</h6>
-          <h2 class="title">We work nearly everywhere</h2>
+          <article>
+              <h3>Disclaimer</h3>
+                <p>This website contains information obtained from sources believed to be reliable and has been prepared in good faith and with all reasonable care. We makes no warranty, express or implied, concerning the suitability, completeness, quality
+                    or exactness of the information and models provided in this website.</p>
+                <p>Neither us, its related entities, nor any of its providers of information, have any liability to the user, or any other third party, for the accuracy of the information or models contained in this website, or for any errors or omissions
+                    therein, nor will us or any of its providers of information have any liability for the use, interpretation or implementation of the information or models contained herein by any person.</p>
+          </article>
+  </section>
+
+
+    <!-- Contact Section Starts-->
+    <section class="container-fluid py-5">
+      <div class="container">
+        <div class="row contact-section">
+          <div class="col-md-7 mx-auto">
+            <h2 class="title">Contact Us</h2>
+            <p>
+              If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at <a href="tel:+60 10 257 3947">+60 10 257 3947</a>.
+            </p>
+          </div>
         </div>
-        
+      </div>
+    </section>
+    <!-- Contact Section Ends -->
+
+    <!-- Footer Starts -->
+    <footer class="footer">
+      <div class="container">
+        <h6 class="sub-title text-center">Send Money</h6>
+        <h2 class="title text-center">We work nearly everywhere</h2>
         <form>
           <dl id="country-select" class="dropdown-country">
             <dt>
@@ -2102,11 +1611,10 @@
     </footer>
     <!-- footer ends -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/scripts.js"></script>
-   
   </body>
 </html>
