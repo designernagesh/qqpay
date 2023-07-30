@@ -1,921 +1,877 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QQ Pay | Home Page</title>
-    <link rel="icon" type="image/svg+xml" href="./assets/icons.svg" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
 
-  <body>
-    <!-- navbar start -->
-    <header class="header">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QQ Pay | Home Page</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/icons.svg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- navbar start -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light py-0">
+        <a class="navbar-brand logo" href="#">
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-4 type-account">
+            <a href="#" class="active">Personal</a>
+            <a href="#">Business</a>
+          </ul>
+          <ul class="navbar-nav ml-auto navigation">
+            <li>
+              <a href="index.html">
+                <span class="nav-item">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="about-us.html">
+                <span class="nav-item">About Us</span>
+              </a>
+            </li>
+            <li>
+              <a href="send-money.html">
+                <span class="nav-item">Send Money</span>
+              </a>
+            </li>
+            <li class="active">
+              <a href="faq.html">
+                <span class="nav-item">FAQs</span>
+              </a>
+            </li>
+            <li>
+              <a href="contact-us.html">
+                <span class="nav-item">Contact Us</span>
+              </a>
+            </li>
+          </ul>
+          <div class="profile">
+            <a href="https://qrateonline.qqpay.io/login" class="button-filled">Login</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- navbar ends -->
+
+  <!-- banner starts -->
+  <section class="innerpage-banner">
+    <div class="container">
+      <!-- Banner Content -->
+      <div class="banner-content">
+        <h1 class="title text-white">FAQ</h1>
+        <div class="breadcrumb justify-content-center">
+          <a href="">Home</a> <span class="current-page">FAQs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- banner starts -->
+
+  <!-- accordion section starts-->
+  <section class="faqs-section bg-white">
+    <div class="overlay">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light py-0">
-          <a class="navbar-brand logo" href="#">
-            <img src="./assets/images/logo.svg" alt="logo" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-4 type-account">
-              <a href="#" class="active">Personal</a>
-              <a href="#">Business</a>
-            </ul>
-            <ul class="navbar-nav ml-auto navigation">
-              <li>
-                <a href="index.html">
-                  <span class="nav-item">Home</span>
-                </a>
-              </li>
-              <li>
-                <a href="about-us.html">
-                  <span class="nav-item">About Us</span>
-                </a>
-              </li>
-              <li>
-                <a href="send-money.html">
-                  <span class="nav-item">Send Money</span>
-                </a>
-              </li>
-              <li class="active">
-                <a href="faq.html">
-                  <span class="nav-item">FAQs</span>
-                </a>
-              </li>
-              <li>
-                <a href="contact-us.html">
-                  <span class="nav-item">Contact Us</span>
-                </a>
-              </li>
-            </ul>
-            <div class="profile">
-              <a href="https://qrateonline.qqpay.io/login" class="button-filled">Login</a>
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-7">
+            <div class="section-header text-center pt-120">
+              <h5 class="sub-title">Frequently Asked Questions</h5>
+              <h2 class="title">If you got questions we have answer</h2>
+              <p>We have a list of frequently asked questions about us</p>
             </div>
           </div>
+        </div>
+        <div class="row cus-mar">
+          <div class="col-lg-6">
+            <h4 class="mt-5 title">Registration</h4>
+            <div id="accordion" class="accordion">
+              <div class="card">
+                <h6 class="card-header" id="registrationheading1">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#registrationcollapse1" aria-expanded="false" aria-controls="registrationcollapse1">
+                    How long does it take to verify my identity?
+                  </button>
+                </h6>
+                <div id="registrationcollapse1" class="accordion-collapse collapse"
+                  aria-labelledby="registrationheading1" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                      Typically, we verify your identity electronically and
+                      pretty quickly. However, sometimes we’ll need to get
+                      some documents from you. If you’ve sent us documents,
+                      we’ll try to respond back to you within a few business
+                      days after we receive them. If it’s taking longer than
+                      this, and you need to make a transfer, please
+                      <strong><a style="color: #ff6b00">get in touch</a></strong>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <h6 class="card-header" id="registrationheading2">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#registrationcollapse2" aria-expanded="false" aria-controls="registrationcollapse2">
+                    I’ve registered – When can I make the transfer?
+                  </button>
+                </h6>
+                <div id="registrationcollapse2" class="accordion-collapse collapse"
+                  aria-labelledby="registrationheading2" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                      Upon completing registration, we will verify your
+                      identity. Once it done, you can begin transferring your
+                      money online. Our team is stand by to provide any
+                      assistance and we will update you on the status of your
+                      transfer via SMS or email and you can thereafter keep
+                      track of your transaction.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="mt-5 title">Currencies & Fees</h4>
+            <div id="cf" class="accordion">
+              <div class="card">
+                <h6 class="card-header" id="cfheading1">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#cfcollapse1" aria-expanded="false" aria-controls="cfcollapse1">
+                    Are there any transfer fees?
+                  </button>
+                </h6>
+                <div id="cfcollapse1" class="accordion-collapse collapse" aria-labelledby="cfheading1"
+                  data-parent="#cf">
+                  <div class="card-body">
+                    <p>
+                      Yes there are. The fee is communicated to the customer
+                      upfront before the transaction takes place. QQ Pay
+                      ensures transparency and a fair pricing strategy policy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <h6 class="card-header" id="cfheading2">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#cfcollapse2" aria-expanded="false" aria-controls="cfcollapse2">
+                    What currencies can I make a transfer with QQPay?
+                  </button>
+                </h6>
+                <div id="cfcollapse2" class="accordion-collapse collapse" aria-labelledby="cfheading2"
+                  data-parent="#cf">
+                  <div class="card-body">
+                    <p>Below is a full list of our supported currencies.</p>
+                    <ul>
+                      <li>AUD Australian Dollar</li>
+                      <li>BDT Bangladesh Taka</li>
+                      <li>KHR Cambodian Riel</li>
+                      <li>CNY Chinese Yuan</li>
+                      <li>INR Indian Rupee</li>
+                      <li>IDR Indonesian Rupee</li>
+                      <li>IDR Indonesian Rupee</li>
+                      <li>JPY Japanese Yen</li>
+                      <li>MYR Malaysian Ringgit</li>
+                      <li>NPR Nepalese Rupee</li>
+                      <li>PKR Pakistani Rupee</li>
+                      <li>PHP Philippine Peso</li>
+                      <li>KRW Korean Won</li>
+                      <li>SGD Singapore Dollar</li>
+                      <li>LKR Sri Lankan Rupee</li>
+                      <li>THB Thailand Baht</li>
+                      <li>TRY Turkish Lira</li>
+                      <li>VND Vietnamese Dong</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="mt-5 title">Transfer Money</h4>
+            <div id="tf" class="accordion">
+              <div class="card">
+                <h6 class="card-header" id="tfheading1">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#tfcollapse1" aria-expanded="false" aria-controls="tfcollapse1">
+                    How do I make a transfer?
+                  </button>
+                </h6>
+                <div id="tfcollapse1" class="accordion-collapse collapse" aria-labelledby="tfheading1"
+                  data-parent="#tf">
+                  <div class="card-body">
+                    <p>
+                      It’s easy for you to make a transfer in 4 simple steps.
+                      Register, get verified and login to QQPay mobile apps or
+                      online web portal. Add your recipient/ beneficiary.
+                      Select the recipient and enter the amount to transfer.
+                      Simply choose the payment method available to send your
+                      fund to us and we will take care the rest. Our global
+                      network of bank accounts and cash payout locations
+                      ensures that your funds are converted and delivered to
+                      your recipient quickly and safely.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h6 class="card-header" id="tfheading2">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#tfcollapse2" aria-expanded="false" aria-controls="tfcollapse2">
+                    Can I cancel my transfer?
+                  </button>
+                </h6>
+                <div id="tfcollapse2" class="accordion-collapse collapse" aria-labelledby="tfheading2"
+                  data-parent="#tf">
+                  <div class="card-body">
+                    <p>If you need to cancel a transfer, or if you are unable to make payment for your transfer, you
+                      will need to call us as soon as you can. If you have any questions about how to make a payment to
+                      us, its best to contact us
+                      prior to confirming your transfer.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h6 class="card-header" id="tfheading3">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#tfcollapse3" aria-expanded="false" aria-controls="tfcollapse3">
+                    How do I add a new recipient?
+                  </button>
+                </h6>
+                <div id="tfcollapse3" class="accordion-collapse collapse" aria-labelledby="tfheading3"
+                  data-parent="#tf">
+                  <div class="card-body">
+                    <ul>
+                      <li>Login to your QQPay account</li>
+                      <li>Select the “Manage Beneficiary” tab, then “New Beneficiary”.</li>
+                      <li>Fill in all the required information about your recipient such as recipient’s personal detail
+                        and bank details.</li>
+                      <li>Finally click the “Add Beneficiary” Button and you’re done. Your created beneficiary will be
+                        appear in the table list.</li>
+                      <li>You can edit or delete your beneficiary from the table under “Manage Beneficiary” tab.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h6 class="card-header" id="tfheading4">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#tfcollapse4" aria-expanded="false" aria-controls="tfcollapse4">
+                    Can I transfer money to QQPay via physical cash?
+                  </button>
+                </h6>
+                <div id="tfcollapse4" class="accordion-collapse collapse" aria-labelledby="tfheading4"
+                  data-parent="#tf">
+                  <div class="card-body">
+                    <p>We accept only online banking payment transfer and selected E-wallet and card payment mode. QQ
+                      Pay supports the global cashless and digital payment agenda.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <h4 class="mt-5 title">Fintech As A Service (FAAS) Platform</h4>
+            <div id="faas" class="accordion">
+              <div class="card">
+                <h6 class="card-header" id="faasheading1">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#faascollapse1" aria-expanded="false" aria-controls="faascollapse1">
+                    Lower Cost
+                  </button>
+                </h6>
+                <div id="faascollapse1" class="accordion-collapse collapse" aria-labelledby="faasheading1"
+                  data-parent="#faas">
+                  <div class="card-body">
+                    <p>
+                      Our platform handles many mundane operational issues on your behalf, such as server maintenance, scaling, updates, etc that further reduces operational burdens and expenses.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h6 class="card-header" id="faasheading2">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#faascollapse2" aria-expanded="false" aria-controls="faascollapse2">
+                    Demand Scalability
+                  </button>
+                </h6>
+                <div id="faascollapse2" class="accordion-collapse collapse" aria-labelledby="faasheading2"
+                  data-parent="#faas">
+                  <div class="card-body">
+                    <p>Handling the scaling of resources based on demand.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h6 class="card-header" id="faasheading3">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#faascollapse3" aria-expanded="false" aria-controls="faascollapse3">
+                    Speed to Market
+                  </button>
+                </h6>
+                <div id="faascollapse3" class="accordion-collapse collapse" aria-labelledby="faasheading3"
+                  data-parent="#faas">
+                  <div class="card-body">
+                    <p>By leveraging on us, you can take advantage of pre-built infrastructure and services, saving you precious time.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h6 class="card-header" id="faasheading4">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#faascollapse4" aria-expanded="false" aria-controls="faascollapse4">
+                    Innovation and Agility
+                  </button>
+                </h6>
+                <div id="faascollapse4" class="accordion-collapse collapse" aria-labelledby="faasheading4"
+                  data-parent="#faas">
+                  <div class="card-body">
+                    <p>Our FAAS platform encourages rapid prototyping, enabling businesses to quickly test and deploy new features and enhancements. This fosters innovation to changing market demands. </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h6 class="card-header" id="faasheading5">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#faascollapse5" aria-expanded="false" aria-controls="faascollapse5">
+                    Global Payment Reach
+                  </button>
+                </h6>
+                <div id="faascollapse5" class="accordion-collapse collapse" aria-labelledby="faasheading5"
+                  data-parent="#faas">
+                  <div class="card-body">
+                    <p>Our global geographical location and distribution enhances speed and reliability for cross-border payments.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h6 class="card-header" id="faasheading6">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#faascollapse6" aria-expanded="false" aria-controls="faascollapse6">
+                    Enhanced Security
+                  </button>
+                </h6>
+                <div id="faascollapse6" class="accordion-collapse collapse" aria-labelledby="faasheading6"
+                  data-parent="#faas">
+                  <div class="card-body">
+                    <p>This is crucial where data privacy and protection are of utmost importance by adhering to high security measures.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <h4 class="mt-5 title">Delivery Time & Tracking</h4>
+            <div id="dtt" class="accordion">
+              <div class="card">
+                <h6 class="card-header" id="dttheading1">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#dttcollapse1" aria-expanded="false" aria-controls="dttcollapse1">
+                    How can I track my transfer?
+                  </button>
+                </h6>
+                <div id="dttcollapse1" class="accordion-collapse collapse" aria-labelledby="dttheading1"
+                  data-parent="#dtt">
+                  <div class="card-body">
+                    <p>You can also track the status of your transfer by clicking on the “Transaction tab”. You can see
+                      all your transaction history along with the status. If you are using QQ Pay mobile apps you can
+                      check the status of your transaction
+                      under the “Remittance Tab” of the mobile apps.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h6 class="card-header" id="dttheading2">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#dttcollapse2" aria-expanded="false" aria-controls="dttcollapse2">
+                    How do I check my transfer history?
+                  </button>
+                </h6>
+                <div id="dttcollapse2" class="accordion-collapse collapse" aria-labelledby="dttheading2"
+                  data-parent="#dtt">
+                  <div class="card-body">
+                    <p>Keeping track of your past transfers is easy. Simply login to your QQPay account and select the
+                      “Transaction” tab. All your transfer history information is available including recipient details,
+                      exchange rates, payment
+                      mode and payout location.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h6 class="card-header" id="dttheading3">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#dttcollapse3" aria-expanded="false" aria-controls="dttcollapse3">
+                    How long does a bank-to-bank transfer take?
+                  </button>
+                </h6>
+                <div id="dttcollapse3" class="accordion-collapse collapse" aria-labelledby="dttheading3"
+                  data-parent="#dtt">
+                  <div class="card-body">
+                    <p>Typically, an international bank to bank transfer could take anywhere from 1-2 business days with
+                      most banks. A bank to bank transfer is a reliable and safe way to send money, but how long does it
+                      take for a bank to bank
+                      transfer to go through? The length of time required to transfer your money will depend upon
+                      factors that include:</p>
+                    <ul>
+                      <li>Bank holidays</li>
+                      <li>Weekends</li>
+                      <li>The currencies that are involved in the transaction</li>
+                      <li>The payment method that you use</li>
+                      <li>Whether it’s a domestic or international transfer</li>
+                      <li>The company you choose to make your money transfer</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h6 class="card-header" id="dttheading4">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#dttcollapse4" aria-expanded="false" aria-controls="dttcollapse4">
+                    How long will my transfer take?
+                  </button>
+                </h6>
+                <div id="dttcollapse4" class="accordion-collapse collapse" aria-labelledby="dttheading4"
+                  data-parent="#dtt">
+                  <div class="card-body">
+                    <p>Generally, no time at all. Since we have a global network of bank accounts, making a transfer
+                      with us is not only secure, but also very fast. As soon as your send us your funds, we’ll transfer
+                      them to your recipient. The
+                      time it takes for us to transfer the funds to your recipient depends on the country, but in most
+                      cases it takes 1-2 business days. Below you’ll find a list of standard delivery times for our most
+                      popular countries.
+                    </p>
+                    <h5>Time it takes for the funds to reach your recipient</h5>
+                    <table class="time-table">
+                      <tbody>
+                        <tr>
+                          <th>From</th>
+                          <th>Time</th>
+                        </tr>
+                        <tr>
+                          <td>Australia (AUD)</td>
+                          <td>1 day</td>
+                        </tr>
+                        <tr>
+                          <td>Bangladesh (BDT)</td>
+                          <td>1 days</td>
+                        </tr>
+                        <tr>
+                          <td>Cambodia (KHR)</td>
+                          <td>1-2 days</td>
+                        </tr>
+                        <tr>
+                          <td>China (CNY)</td>
+                          <td>1-2 days</td>
+                        </tr>
+                        <tr>
+                          <td>India (INR)</td>
+                          <td>1-2 days</td>
+                        </tr>
+                        <tr>
+                          <td>Indonesia (INR)</td>
+                          <td>1 days</td>
+                        </tr>
+                        <tr>
+                          <td>Japan (JPY)</td>
+                          <td>1-2 day</td>
+                        </tr>
+                        <tr>
+                          <td>Malaysia (MYR)</td>
+                          <td>1 day</td>
+                        </tr>
+                        <tr>
+                          <td>Nepal (NPR)</td>
+                          <td>1-2 days</td>
+                        </tr>
+                        <tr>
+                          <td>Pakistan (PR)</td>
+                          <td>1-2 day</td>
+                        </tr>
+                        <tr>
+                          <td>Philippines (PHP)</td>
+                          <td>1 day</td>
+                        </tr>
+                        <tr>
+                          <td>South Korea (KRW)</td>
+                          <td>1-2 day</td>
+                        </tr>
+                        <tr>
+                          <td>Singapore (SGD)</td>
+                          <td>1 day</td>
+                        </tr>
+                        <tr>
+                          <td>Sri Lanka (LKR)</td>
+                          <td>1-2 day</td>
+                        </tr>
+                        <tr>
+                          <td>Thailand (THB)</td>
+                          <td>1 day</td>
+                        </tr>
+                        <tr>
+                          <td>Turkey (TRY)</td>
+                          <td>1-2 day</td>
+                        </tr>
+                        <tr>
+                          <td>Vietnam (VND)</td>
+                          <td>1 day</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h6 class="card-header" id="dttheading5">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#dttcollapse5" aria-expanded="false" aria-controls="dttcollapse5">
+                    How long do online payments take?
+                  </button>
+                </h6>
+                <div id="dttcollapse5" class="accordion-collapse collapse" aria-labelledby="dttheading5"
+                  data-parent="#dtt">
+                  <div class="card-body">
+                    <p>Money transfers are easy, fast, and reliable ways to send money both domestically and
+                      internationally. Payments to major markets can usually be made within within the same day or the
+                      next day from the time we receives your
+                      funds. When compared to using your bank, your online payments may take less time when you use QQ
+                      Pay, because we harness the power of local and offshore banking and payment networks to expedite
+                      your payments.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h6 class="card-header" id="dttheading6">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#dttcollapse6" aria-expanded="false" aria-controls="dttcollapse6">
+                    What time of the day are the transfers usually completed?
+                  </button>
+                </h6>
+                <div id="dttcollapse6" class="accordion-collapse collapse" aria-labelledby="dttheading6"
+                  data-parent="#dtt">
+                  <div class="card-body">
+                    <p>We receive and make payments all day. Depending on the currency, we will make payments during its
+                      local business hours.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <h4 class="mt-5 title">Safety & Security</h4>
+            <div id="ss" class="accordion">
+              <div class="card">
+                <h6 class="card-header" id="ssheading1">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#sscollapse1" aria-expanded="false" aria-controls="sscollapse1">
+                    Is it safe to wire money?
+                  </button>
+                </h6>
+                <div id="sscollapse1" class="accordion-collapse collapse" aria-labelledby="ssheading1"
+                  data-parent="#ss">
+                  <div class="card-body">
+                    <p>Wire transfers are one of the most efficient ways to transfer money overseas, but is it safe to
+                      wire money? The simple answer is yes. Usually.</p>
+                    <h4>The Biggest Risk To Your Money Could Be You</h4>
+                    <p>The risks associated with wiring money are, in part, a result of the efficiency of the method for
+                      sending funds. Wire transfers can often be completed within one business day by providers like us.
+                    </p>
+                    <h4>How Can You Stay Safe When Wiring Money?</h4>
+                    <p>You can increase the safety of your money wire by following some simple guidelines:</p>
+                    <ul>
+                      <li>Avoid wiring money to someone you’ve never met in person.</li>
+                      <li>If you need to pay people you’ve never met like overseas suppliers, verify their business
+                        credentials through phone calls, online reviews and other means. This is to ensure you are
+                        dealing with the company itself and
+                        not an imposter pretending to be your supplier.</li>
+                      <li>Be especially cautious when wiring money to someone who first contacted you via email or
+                        dating service.</li>
+                      <li>Choose a money transfer provider with a dedicated fraud prevention team like QQ Pay.</li>
+                      <li>Be careful when donating to independent charities who may lack the oversight of larger
+                        organisations and who may not be what they claim. Do some research before you give. Check the
+                        organization’s identity and tax status
+                        before you donate.</li>
+                    </ul>
+
+                    <h4>Is It Safe To Wire Money With Your Bank?</h4>
+                    <p>As discussed above, wiring money with your bank will not necessarily make your transfer safer and
+                      using your bank could cost you a lot. Banks often take a margin of 5% over the daily exchange rate
+                      when they send your money
+                      overseas. <br> So is it safe to wire money? Yes, as long as you take some simple precautions to
+                      protect yourself from unknown recipients and high bank fees.</p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h6 class="card-header" id="ssheading2">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#sscollapse2" aria-expanded="false" aria-controls="sscollapse2">
+                    What are the warning signs of wire transfer fraud?
+                  </button>
+                </h6>
+                <div id="sscollapse2" class="accordion-collapse collapse" aria-labelledby="ssheading2"
+                  data-parent="#ss">
+                  <div class="card-body">
+                    <h4>Know How To Recognize The Warning Signs Of Wire Transfer Fraud:</h4>
+                    <ul>
+                      <li dir="ltr">Someone that you have never met in person is asking for money. This is the biggest
+                        red flag for fraud. If you’re in a long-distance relationship with someone you’ve never met in
+                        person, be wary of possible fraud, if
+                        they start asking for money. The reality is: fraudsters are professionals and they’ll do
+                        whatever it takes to get their hands on your cash. When it comes to that new love, overseas
+                        inheritance or investment opportunity,
+                        it’s worth the cost of the plane ticket to ensure it’s legit. If you can’t meet them in person,
+                        you should think twice before sending your money.</li>
+                      <li dir="ltr">You receive an email that claims you’ve won a jackpot but you have to pay fees
+                        before you can receive the prize. The reality is: the fraudsters are the ones hitting the
+                        jackpot. If it sounds too good to be true, it
+                        probably is.</li>
+                      <li dir="ltr">You see an ad online for a great deal, but you’re required to transfer the money
+                        right away to receive the product. The reality is: the product doesn’t exist and they just want
+                        your money. While many people use wire
+                        transfers to pay for luxury items, it’s worth checking the reputation of the seller, if you’re
+                        transferring a large sum.</li>
+                      <li dir="ltr">You get a job as a mystery shopper but they send you a check for more than what
+                        you’re owed. You’re asked to send the excess funds back via wire transfer. The reality is: this
+                        is just a clever way to steal your cash,
+                        as the check is probably fake.</li>
+                      <li dir="ltr">You receive an email from someone pretending to be your bank or other service
+                        provider saying you need to update your security info. The reality is: as soon as you click the
+                        link, you’re vulnerable to malware. Phishing
+                        emails that try to steal your information or get you to wire money will often contain a lot of
+                        spelling and grammatical errors. The email might not address you by name, and it comes from a
+                        suspicious and unrecognizable
+                        source. It will probably ask you to provide financial information or to verify it, but if you
+                        hover over a URL, you’ll see that it will take you to a suspicious and unknown website. Don’t
+                        click on any links within
+                        these emails; instead, just delete them and block the sender.</li>
+                    </ul>
+                    <h4>What Not To Worry About</h4>
+                    <p>When you see a warning signs for wire transfer fraud, the good news is that you can protect
+                      yourself by being alert to typical scams and taking some simple self-protection steps. If you do
+                      need to wire money overseas, using
+                      a reputable provider like QQ Pay will get your money where it needs to be safely and securely.</p>
+                    <p>We’ve taken a multi-layered approach to your security because we don’t want you to fall victim to
+                      scammers. A combination of SSL encryption, fraud prevention, and identity protection means you can
+                      enjoy the benefits of
+                      our services while resting easy. So tell those scammers to scram because you’re too smart to be
+                      fooled by their tricks.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h6 class="card-header" id="ssheading3">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#sscollapse3" aria-expanded="false" aria-controls="sscollapse3">
+                    How do I add a new recipient?
+                  </button>
+                </h6>
+                <div id="sscollapse3" class="accordion-collapse collapse" aria-labelledby="ssheading3"
+                  data-parent="#ss">
+                  <div class="card-body">
+                    <p>It is a smarter way to transfer! We offer:</p>
+                    <ul>
+                      <li>Better-than-bank exchange rates – for both personal and business transfers, we regularly save
+                        customers thousands of money, and for bigger transfers, the savings can run into the tens of
+                        thousands. Why are the bank
+                        rates so bad? You would have to ask them.</li>
+                      <li>24/7 customer and technology support – we have a 24-hours dedicated support team using some of
+                        the latest technology in order for most of our customers to transfer instantly.</li>
+                      <li>A trusted network – we have an extensive, highly regulated network of local and overseas bank
+                        accounts that allows for swift transfers.</li>
+                      <li>We offer you a range of fast and secure ways to transfer your money.</li>
+                      <li>Specialised business and risk management transfer options – for business customers we offer
+                        competative rates ensuring a lower cost of transfer. In addition, we provide a range of options
+                        to help our customers manage
+                        foreign exchange risk exposures.</li>
+                      <li style="list-style-type: none;">&nbsp;</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <h4 class="mt-5 title">General & Others</h4>
+            <div id="go" class="accordion">
+              <div class="card">
+                <h6 class="card-header" id="goheading1">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#gocollapse1" aria-expanded="false" aria-controls="gocollapse1">
+                    How do I update my personal details?
+                  </button>
+                </h6>
+                <div id="gocollapse1" class="accordion-collapse collapse" aria-labelledby="goheading1"
+                  data-parent="#go">
+                  <div class="card-body">
+                    <p>Need to change or edit your details? Easy.</p>
+                    <ul>
+                      <li>Simply login into your account and click your avatar icon to view your profile.</li>
+                      <li>Click on edit profile and start editing your information.</li>
+                      <li>You’re done.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h6 class="card-header" id="goheading2">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#gocollapse2" aria-expanded="false" aria-controls="gocollapse2">
+                    I’ve forgotten my Username or Password – What should I do?
+                  </button>
+                </h6>
+                <div id="gocollapse2" class="accordion-collapse collapse" aria-labelledby="goheading2"
+                  data-parent="#go">
+                  <div class="card-body">
+                    <p>Can’t remember your username or password? It’s ok. There are ways to retrieve it – simply click
+                      “Login” on our homepage and under the login button click “Forgotten your username or password?”.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- accordion section ends-->
+
+  <section class="signup">
+    <div class="container">
+      <div class="contact-section">
+        <h6 class="sub-title">Sign Up</h6>
+        <h2 class="heading">Get Started Today</h2>
+        <p>
+          Easy, Fast, Transparent. Etiam libero purus, ornare ut maximus vel,
+          egestas ut massa. Aliquam mollis magna metus. Vivamus rhoncus a ex
+          nec varius. Nulla ornare rhoncus quam, vel fermentum tellus
+          venenatis eu.
+        </p>
+        <button class="button-filled">Sign Up in Minutes</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer starts -->
+  <footer class="footer">
+    <div class="container">
+      <div class="section-header">
+        <h6 class="sub-title">Send Money</h6>
+        <h2 class="title">We work nearly everywhere</h2>
+      </div>
+
+      <form>
+        <div class="dropdown">
+          <div class="dropdown__skeleton">
+            <div class="dropdown__selected dropdown__option">
+              <img src="assets/images/India.png" alt="United Kingdom" /><span>United Kingdom</span>
+            </div>
+
+            <div class="dropdown__arrow"></div>
+          </div>
+
+          <div class="dropdown__options">
+            <div class="dropdown__option dropdown__option--selected">
+              <img src="assets/images/India.png" alt="United Kingdom" /><span>United Kingdom</span>
+            </div>
+
+            <div class="dropdown__option">
+              <img src="assets/images/India.png" alt="United Kingdom" /><span>U.S.</span>
+            </div>
+
+            <div class="dropdown__option">
+              <img src="assets/images/India.png" alt="United Kingdom" /><span>France</span>
+            </div>
+
+            <div class="dropdown__option">
+              <img src="assets/images/India.png" alt="United Kingdom" /><span>Spain</span>
+            </div>
+
+            <div class="dropdown__option">
+              <img src="assets/images/India.png" alt="United Kingdom" /><span>Germany</span>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="button-filled">Send Money</button>
+      </form>
+      <div class="footer-top">
+        <div class="logo">
+          <img src="./assets/images/logo.svg" alt="skillxchange logo" />
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="send-money.html">Send Money</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+          </ul>
         </nav>
       </div>
-    </header>
-    <!-- navbar ends -->
 
-    <!-- banner starts -->
-    <section class="innerpage-banner">
-      <div class="container">
-        <!-- Banner Content -->
-        <div class="banner-content">
-          <h1 class="title text-white">FAQ</h1>
-          <div class="breadcrumb justify-content-center">
-            <a href="">Home</a> <span class="current-page">FAQs</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- banner starts -->
+      <hr class="divider" />
+      <p>
+        <strong>Important:</strong> This information has been prepared for
+        distribution over the internet and without taking into account the
+        investment objectives, financial situation and particular needs of any
+        particular person. QQ Fintech Pte Ltd and its subsidiaries make no
+        recommendations as to the merits of any financial product referred to
+        in the website, email or its related websites.
+      </p>
 
-    <!-- accordion section starts-->
-    <section class="faqs-section bg-white">
-      <div class="overlay">
-        <div class="container">
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-7">
-              <div class="section-header text-center pt-120">
-                <h5 class="sub-title">Frequently Asked Questions</h5>
-                <h2 class="title">If you got questions we have answer</h2>
-                <p>We have a list of frequently asked questions about us</p>
-              </div>
-            </div>
-          </div>
-          <div class="row cus-mar">
-            <div class="col-lg-6">
-              <h4 class="mt-5 title">Registration</h4>
-              <div id="accordion" class="accordion">
-                <div class="card">
-                  <h6 class="card-header" id="registrationheading1">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#registrationcollapse1"
-                      aria-expanded="false"
-                      aria-controls="registrationcollapse1"
-                    >
-                      How long does it take to verify my identity?
-                    </button>
-                  </h6>
-                  <div
-                    id="registrationcollapse1"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="registrationheading1"
-                    data-parent="#accordion"
-                  >
-                    <div class="card-body">
-                      <p>
-                        Typically, we verify your identity electronically and
-                        pretty quickly. However, sometimes we’ll need to get
-                        some documents from you. If you’ve sent us documents,
-                        we’ll try to respond back to you within a few business
-                        days after we receive them. If it’s taking longer than
-                        this, and you need to make a transfer, please
-                        <strong
-                          ><a style="color: #ff6b00">get in touch</a></strong
-                        >.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <h6 class="card-header" id="registrationheading2">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#registrationcollapse2"
-                      aria-expanded="false"
-                      aria-controls="registrationcollapse2"
-                    >
-                      I’ve registered – When can I make the transfer?
-                    </button>
-                  </h6>
-                  <div
-                    id="registrationcollapse2"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="registrationheading2"
-                    data-parent="#accordion"
-                  >
-                    <div class="card-body">
-                      <p>
-                        Upon completing registration, we will verify your
-                        identity. Once it done, you can begin transferring your
-                        money online. Our team is stand by to provide any
-                        assistance and we will update you on the status of your
-                        transfer via SMS or email and you can thereafter keep
-                        track of your transaction.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <p>
+        <strong>Disclaimer:</strong> QQ Fintech Pte Ltd & its subsidiaries
+        makes no warranty, express or implied, concerning the suitability,
+        completeness, quality or exactness of the information and models
+        provided in this website. For further clarification, please read
+        <a href="disclaimer.html">Full Disclaimer</a>,
+        <a href="money-laundering.html">Money Laundering Statement</a> and
+        <a href="privacy-policy.html">Privacy Policy</a> statements of QQPay
+        Fintech Pte Ltd.
+      </p>
 
-              <h4 class="mt-5 title">Currencies & Fees</h4>
-              <div id="cf" class="accordion">
-                <div class="card">
-                  <h6 class="card-header" id="cfheading1">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#cfcollapse1"
-                      aria-expanded="false"
-                      aria-controls="cfcollapse1"
-                    >
-                      Are there any transfer fees?
-                    </button>
-                  </h6>
-                  <div
-                    id="cfcollapse1"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="cfheading1"
-                    data-parent="#cf"
-                  >
-                    <div class="card-body">
-                      <p>
-                        Yes there are. The fee is communicated to the customer
-                        upfront before the transaction takes place. QQ Pay
-                        ensures transparency and a fair pricing strategy policy.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <h6 class="card-header" id="cfheading2">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#cfcollapse2"
-                      aria-expanded="false"
-                      aria-controls="cfcollapse2"
-                    >
-                      What currencies can I make a transfer with QQPay?
-                    </button>
-                  </h6>
-                  <div
-                    id="cfcollapse2"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="cfheading2"
-                    data-parent="#cf"
-                  >
-                    <div class="card-body">
-                      <p>Below is a full list of our supported currencies.</p>
-                      <ul>
-                        <li>AUD Australian Dollar</li>
-                        <li>BDT Bangladesh Taka</li>
-                        <li>KHR Cambodian Riel</li>
-                        <li>CNY Chinese Yuan</li>
-                        <li>INR Indian Rupee</li>
-                        <li>IDR Indonesian Rupee</li>
-                        <li>IDR Indonesian Rupee</li>
-                        <li>JPY Japanese Yen</li>
-                        <li>MYR Malaysian Ringgit</li>
-                        <li>NPR Nepalese Rupee</li>
-                        <li>PKR Pakistani Rupee</li>
-                        <li>PHP Philippine Peso</li>
-                        <li>KRW Korean Won</li>
-                        <li>SGD Singapore Dollar</li>
-                        <li>LKR Sri Lankan Rupee</li>
-                        <li>THB Thailand Baht</li>
-                        <li>TRY Turkish Lira</li>
-                        <li>VND Vietnamese Dong</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <p>&copy; QQPay 2022. All Rights Reserverd.</p>
+    </div>
+  </footer>
+  <!-- footer ends -->
 
-              <h4 class="mt-5 title">Transfer Money</h4>
-              <div id="tf" class="accordion">
-                <div class="card">
-                  <h6 class="card-header" id="tfheading1">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#tfcollapse1"
-                      aria-expanded="false"
-                      aria-controls="tfcollapse1"
-                    >
-                      How do I make a transfer?
-                    </button>
-                  </h6>
-                  <div
-                    id="tfcollapse1"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="tfheading1"
-                    data-parent="#tf"
-                  >
-                    <div class="card-body">
-                      <p>
-                        It’s easy for you to make a transfer in 4 simple steps.
-                        Register, get verified and login to QQPay mobile apps or
-                        online web portal. Add your recipient/ beneficiary.
-                        Select the recipient and enter the amount to transfer.
-                        Simply choose the payment method available to send your
-                        fund to us and we will take care the rest. Our global
-                        network of bank accounts and cash payout locations
-                        ensures that your funds are converted and delivered to
-                        your recipient quickly and safely.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
 
-                <div class="card">
-                  <h6 class="card-header" id="tfheading2">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#tfcollapse2"
-                      aria-expanded="false"
-                      aria-controls="tfcollapse2"
-                    >
-                      Can I cancel my transfer?
-                    </button>
-                  </h6>
-                  <div
-                    id="tfcollapse2"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="tfheading2"
-                    data-parent="#tf"
-                  >
-                    <div class="card-body">
-                      <p>If you need to cancel a transfer, or if you are unable to make payment for your transfer, you will need to call us as soon as you can. If you have any questions about how to make a payment to us, its best to contact us
-                                    prior to confirming your transfer.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <h6 class="card-header" id="tfheading3">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#tfcollapse3"
-                      aria-expanded="false"
-                      aria-controls="tfcollapse3"
-                    >
-                      How do I add a new recipient?
-                    </button>
-                  </h6>
-                  <div
-                    id="tfcollapse3"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="tfheading3"
-                    data-parent="#tf"
-                  >
-                    <div class="card-body">
-                        <ul>
-                            <li>Login to your QQPay account</li>
-                            <li>Select the “Manage Beneficiary” tab, then “New Beneficiary”.</li>
-                            <li>Fill in all the required information about your recipient such as recipient’s personal detail and bank details.</li>
-                            <li>Finally click the “Add Beneficiary” Button and you’re done. Your created beneficiary will be appear in the table list.</li>
-                            <li>You can edit or delete your beneficiary from the table under “Manage Beneficiary” tab.</li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <h6 class="card-header" id="tfheading4">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#tfcollapse4"
-                      aria-expanded="false"
-                      aria-controls="tfcollapse4"
-                    >
-                      Can I transfer money to QQPay via physical cash?
-                    </button>
-                  </h6>
-                  <div
-                    id="tfcollapse4"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="tfheading4"
-                    data-parent="#tf"
-                  >
-                    <div class="card-body">
-                        <p>We accept only online banking payment transfer and selected E-wallet and card payment mode. QQ Pay supports the global cashless and digital payment agenda.</p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-                <h4 class="mt-5 title">Delivery Time & Tracking</h4>
-              <div id="dtt" class="accordion">
-                <div class="card">
-                  <h6 class="card-header" id="dttheading1">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#dttcollapse1"
-                      aria-expanded="false"
-                      aria-controls="dttcollapse1"
-                    >
-                      How can I track my transfer?
-                    </button>
-                  </h6>
-                  <div
-                    id="dttcollapse1"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="dttheading1"
-                    data-parent="#dtt"
-                  >
-                    <div class="card-body">
-                      <p>You can also track the status of your transfer by clicking on the “Transaction tab”. You can see all your transaction history along with the status. If you are using QQ Pay mobile apps you can check the status of your transaction
-                                    under the “Remittance Tab” of the mobile apps.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <h6 class="card-header" id="dttheading2">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#dttcollapse2"
-                      aria-expanded="false"
-                      aria-controls="dttcollapse2"
-                    >
-                      How do I check my transfer history?
-                    </button>
-                  </h6>
-                  <div
-                    id="dttcollapse2"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="dttheading2"
-                    data-parent="#dtt"
-                  >
-                    <div class="card-body">
-                      <p>Keeping track of your past transfers is easy. Simply login to your QQPay account and select the “Transaction” tab. All your transfer history information is available including recipient details, exchange rates, payment
-                                    mode and payout location.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <h6 class="card-header" id="dttheading3">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#dttcollapse3"
-                      aria-expanded="false"
-                      aria-controls="dttcollapse3"
-                    >
-                      How long does a bank-to-bank transfer take?
-                    </button>
-                  </h6>
-                  <div
-                    id="dttcollapse3"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="dttheading3"
-                    data-parent="#dtt"
-                  >
-                    <div class="card-body">
-                        <p>Typically, an international bank to bank transfer could take anywhere from 1-2 business days with most banks. A bank to bank transfer is a reliable and safe way to send money, but how long does it take for a bank to bank
-                            transfer to go through? The length of time required to transfer your money will depend upon factors that include:</p>
-                        <ul>
-                            <li>Bank holidays</li>
-                            <li>Weekends</li>
-                            <li>The currencies that are involved in the transaction</li>
-                            <li>The payment method that you use</li>
-                            <li>Whether it’s a domestic or international transfer</li>
-                            <li>The company you choose to make your money transfer</li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <h6 class="card-header" id="dttheading4">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#dttcollapse4"
-                      aria-expanded="false"
-                      aria-controls="dttcollapse4"
-                    >
-                      How long will my transfer take?
-                    </button>
-                  </h6>
-                  <div
-                    id="dttcollapse4"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="dttheading4"
-                    data-parent="#dtt"
-                  >
-                    <div class="card-body">
-                        <p>Generally, no time at all. Since we have a global network of bank accounts, making a transfer with us is not only secure, but also very fast. As soon as your send us your funds, we’ll transfer them to your recipient. The
-                            time it takes for us to transfer the funds to your recipient depends on the country, but in most cases it takes 1-2 business days. Below you’ll find a list of standard delivery times for our most popular countries.
-                        </p>
-                        <h5>Time it takes for the funds to reach your recipient</h5>
-                        <table class="time-table">
-                            <tbody>
-                                <tr>
-                                    <th>From</th>
-                                    <th>Time</th>
-                                </tr>
-                                <tr>
-                                    <td>Australia (AUD)</td>
-                                    <td>1 day</td>
-                                </tr>
-                                <tr>
-                                    <td>Bangladesh (BDT)</td>
-                                    <td>1 days</td>
-                                </tr>
-                                <tr>
-                                    <td>Cambodia (KHR)</td>
-                                    <td>1-2 days</td>
-                                </tr>
-                                <tr>
-                                    <td>China (CNY)</td>
-                                    <td>1-2 days</td>
-                                </tr>
-                                <tr>
-                                    <td>India (INR)</td>
-                                    <td>1-2 days</td>
-                                </tr>
-                                <tr>
-                                    <td>Indonesia (INR)</td>
-                                    <td>1 days</td>
-                                </tr>
-                                <tr>
-                                    <td>Japan (JPY)</td>
-                                    <td>1-2 day</td>
-                                </tr>
-                                <tr>
-                                    <td>Malaysia (MYR)</td>
-                                    <td>1 day</td>
-                                </tr>
-                                <tr>
-                                    <td>Nepal (NPR)</td>
-                                    <td>1-2 days</td>
-                                </tr>
-                                <tr>
-                                    <td>Pakistan (PR)</td>
-                                    <td>1-2 day</td>
-                                </tr>
-                                <tr>
-                                    <td>Philippines (PHP)</td>
-                                    <td>1 day</td>
-                                </tr>
-                                <tr>
-                                    <td>South Korea (KRW)</td>
-                                    <td>1-2 day</td>
-                                </tr>
-                                <tr>
-                                    <td>Singapore (SGD)</td>
-                                    <td>1 day</td>
-                                </tr>
-                                <tr>
-                                    <td>Sri Lanka (LKR)</td>
-                                    <td>1-2 day</td>
-                                </tr>
-                                <tr>
-                                    <td>Thailand (THB)</td>
-                                    <td>1 day</td>
-                                </tr>
-                                <tr>
-                                    <td>Turkey (TRY)</td>
-                                    <td>1-2 day</td>
-                                </tr>
-                                <tr>
-                                    <td>Vietnam (VND)</td>
-                                    <td>1 day</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <h6 class="card-header" id="dttheading5">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#dttcollapse5"
-                      aria-expanded="false"
-                      aria-controls="dttcollapse5"
-                    >
-                      How long do online payments take?
-                    </button>
-                  </h6>
-                  <div
-                    id="dttcollapse5"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="dttheading5"
-                    data-parent="#dtt"
-                  >
-                    <div class="card-body">
-                        <p>Money transfers are easy, fast, and reliable ways to send money both domestically and internationally. Payments to major markets can usually be made within within the same day or the next day from the time we receives your
-                                    funds. When compared to using your bank, your online payments may take less time when you use QQ Pay, because we harness the power of local and offshore banking and payment networks to expedite your payments.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <h6 class="card-header" id="dttheading6">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#dttcollapse6"
-                      aria-expanded="false"
-                      aria-controls="dttcollapse6"
-                    >
-                      What time of the day are the transfers usually completed?
-                    </button>
-                  </h6>
-                  <div
-                    id="dttcollapse6"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="dttheading6"
-                    data-parent="#dtt"
-                  >
-                    <div class="card-body">
-                        <p>We receive and make payments all day. Depending on the currency, we will make payments during its local business hours.</p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-              <h4 class="mt-5 title">Safety & Security</h4>
-              <div id="ss" class="accordion">
-                <div class="card">
-                  <h6 class="card-header" id="ssheading1">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#sscollapse1"
-                      aria-expanded="false"
-                      aria-controls="sscollapse1"
-                    >
-                      Is it safe to wire money?
-                    </button>
-                  </h6>
-                  <div
-                    id="sscollapse1"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="ssheading1"
-                    data-parent="#ss"
-                  >
-                    <div class="card-body">
-                        <p>Wire transfers are one of the most efficient ways to transfer money overseas, but is it safe to wire money? The simple answer is yes. Usually.</p>
-                        <h4>The Biggest Risk To Your Money Could Be You</h4>
-                        <p>The risks associated with wiring money are, in part, a result of the efficiency of the method for sending funds. Wire transfers can often be completed within one business day by providers like us.</p>
-                        <h4>How Can You Stay Safe When Wiring Money?</h4>
-                        <p>You can increase the safety of your money wire by following some simple guidelines:</p>
-                        <ul>
-                            <li>Avoid wiring money to someone you’ve never met in person.</li>
-                            <li>If you need to pay people you’ve never met like overseas suppliers, verify their business credentials through phone calls, online reviews and other means. This is to ensure you are dealing with the company itself and
-                                not an imposter pretending to be your supplier.</li>
-                            <li>Be especially cautious when wiring money to someone who first contacted you via email or dating service.</li>
-                            <li>Choose a money transfer provider with a dedicated fraud prevention team like QQ Pay.</li>
-                            <li>Be careful when donating to independent charities who may lack the oversight of larger organisations and who may not be what they claim. Do some research before you give. Check the organization’s identity and tax status
-                                before you donate.</li>
-                        </ul>
-
-                        <h4>Is It Safe To Wire Money With Your Bank?</h4>
-                        <p>As discussed above, wiring money with your bank will not necessarily make your transfer safer and using your bank could cost you a lot. Banks often take a margin of 5% over the daily exchange rate when they send your money
-                            overseas. <br> So is it safe to wire money? Yes, as long as you take some simple precautions to protect yourself from unknown recipients and high bank fees.</p>
-
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <h6 class="card-header" id="ssheading2">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#sscollapse2"
-                      aria-expanded="false"
-                      aria-controls="sscollapse2"
-                    >
-                      What are the warning signs of wire transfer fraud?
-                    </button>
-                  </h6>
-                  <div
-                    id="sscollapse2"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="ssheading2"
-                    data-parent="#ss"
-                  >
-                    <div class="card-body">
-                        <h4>Know How To Recognize The Warning Signs Of Wire Transfer Fraud:</h4>
-                        <ul>
-                            <li dir="ltr">Someone that you have never met in person is asking for money. This is the biggest red flag for fraud. If you’re in a long-distance relationship with someone you’ve never met in person, be wary of possible fraud, if
-                                they start asking for money. The reality is: fraudsters are professionals and they’ll do whatever it takes to get their hands on your cash. When it comes to that new love, overseas inheritance or investment opportunity,
-                                it’s worth the cost of the plane ticket to ensure it’s legit. If you can’t meet them in person, you should think twice before sending your money.</li>
-                            <li dir="ltr">You receive an email that claims you’ve won a jackpot but you have to pay fees before you can receive the prize. The reality is: the fraudsters are the ones hitting the jackpot. If it sounds too good to be true, it
-                                probably is.</li>
-                            <li dir="ltr">You see an ad online for a great deal, but you’re required to transfer the money right away to receive the product. The reality is: the product doesn’t exist and they just want your money. While many people use wire
-                                transfers to pay for luxury items, it’s worth checking the reputation of the seller, if you’re transferring a large sum.</li>
-                            <li dir="ltr">You get a job as a mystery shopper but they send you a check for more than what you’re owed. You’re asked to send the excess funds back via wire transfer. The reality is: this is just a clever way to steal your cash,
-                                as the check is probably fake.</li>
-                            <li dir="ltr">You receive an email from someone pretending to be your bank or other service provider saying you need to update your security info. The reality is: as soon as you click the link, you’re vulnerable to malware. Phishing
-                                emails that try to steal your information or get you to wire money will often contain a lot of spelling and grammatical errors. The email might not address you by name, and it comes from a suspicious and unrecognizable
-                                source. It will probably ask you to provide financial information or to verify it, but if you hover over a URL, you’ll see that it will take you to a suspicious and unknown website. Don’t click on any links within
-                                these emails; instead, just delete them and block the sender.</li>
-                        </ul>
-                        <h4>What Not To Worry About</h4>
-                        <p>When you see a warning signs for wire transfer fraud, the good news is that you can protect yourself by being alert to typical scams and taking some simple self-protection steps. If you do need to wire money overseas, using
-                            a reputable provider like QQ Pay will get your money where it needs to be safely and securely.</p>
-                        <p>We’ve taken a multi-layered approach to your security because we don’t want you to fall victim to scammers. A combination of SSL encryption, fraud prevention, and identity protection means you can enjoy the benefits of
-                            our services while resting easy. So tell those scammers to scram because you’re too smart to be fooled by their tricks.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <h6 class="card-header" id="ssheading3">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#sscollapse3"
-                      aria-expanded="false"
-                      aria-controls="sscollapse3"
-                    >
-                      How do I add a new recipient?
-                    </button>
-                  </h6>
-                  <div
-                    id="sscollapse3"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="ssheading3"
-                    data-parent="#ss"
-                  >
-                    <div class="card-body">
-                        <p>It is a smarter way to transfer! We offer:</p>
-                        <ul>
-                            <li>Better-than-bank exchange rates – for both personal and business transfers, we regularly save customers thousands of money, and for bigger transfers, the savings can run into the tens of thousands. Why are the bank
-                                rates so bad? You would have to ask them.</li>
-                            <li>24/7 customer and technology support – we have a 24-hours dedicated support team using some of the latest technology in order for most of our customers to transfer instantly.</li>
-                            <li>A trusted network – we have an extensive, highly regulated network of local and overseas bank accounts that allows for swift transfers.</li>
-                            <li>We offer you a range of fast and secure ways to transfer your money.</li>
-                            <li>Specialised business and risk management transfer options – for business customers we offer competative rates ensuring a lower cost of transfer. In addition, we provide a range of options to help our customers manage
-                                foreign exchange risk exposures.</li>
-                            <li style="list-style-type: none;">&nbsp;</li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-              <h4 class="mt-5 title">General & Others</h4>
-              <div id="go" class="accordion">
-                <div class="card">
-                  <h6 class="card-header" id="goheading1">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#gocollapse1"
-                      aria-expanded="false"
-                      aria-controls="gocollapse1"
-                    >
-                      How do I update my personal details?
-                    </button>
-                  </h6>
-                  <div
-                    id="gocollapse1"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="goheading1"
-                    data-parent="#go"
-                  >
-                    <div class="card-body">
-                        <p>Need to change or edit your details? Easy.</p>
-                        <ul>
-                            <li>Simply login into your account and click your avatar icon to view your profile.</li>
-                            <li>Click on edit profile and start editing your information.</li>
-                            <li>You’re done.</li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <h6 class="card-header" id="goheading2">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#gocollapse2"
-                      aria-expanded="false"
-                      aria-controls="gocollapse2"
-                    >
-                      I’ve forgotten my Username or Password – What should I do?
-                    </button>
-                  </h6>
-                  <div
-                    id="gocollapse2"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="goheading2"
-                    data-parent="#go"
-                  >
-                    <div class="card-body">
-                        <p>Can’t remember your username or password? It’s ok. There are ways to retrieve it – simply click “Login” on our homepage and under the login button click “Forgotten your username or password?”.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- accordion section ends-->
-
-    <section class="signup">
-      <div class="container">
-        <div class="contact-section">
-          <h6 class="sub-title">Sign Up</h6>
-          <h2 class="heading">Get Started Today</h2>
-          <p>
-            Easy, Fast, Transparent. Etiam libero purus, ornare ut maximus vel,
-            egestas ut massa. Aliquam mollis magna metus. Vivamus rhoncus a ex
-            nec varius. Nulla ornare rhoncus quam, vel fermentum tellus
-            venenatis eu.
-          </p>
-          <button class="button-filled">Sign Up in Minutes</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- footer starts -->
-    <footer class="footer">
-      <div class="container">
-        <div class="section-header">
-          <h6 class="sub-title">Send Money</h6>
-          <h2 class="title">We work nearly everywhere</h2>
-        </div>
-
-        <form>
-          <div class="dropdown">
-                          <div class="dropdown__skeleton">
-                            <div class="dropdown__selected dropdown__option">
-                              <img src="assets/images/India.png" alt="United Kingdom" /><span>United Kingdom</span>
-                            </div>
-
-                            <div class="dropdown__arrow"></div>
-                          </div>
-
-                          <div class="dropdown__options">
-                            <div
-                              class="dropdown__option dropdown__option--selected"
-                            >
-                              <img src="assets/images/India.png" alt="United Kingdom" /><span>United Kingdom</span>
-                            </div>
-
-                            <div class="dropdown__option">
-                              <img src="assets/images/India.png" alt="United Kingdom" /><span>U.S.</span>
-                            </div>
-
-                            <div class="dropdown__option">
-                              <img src="assets/images/India.png" alt="United Kingdom" /><span>France</span>
-                            </div>
-
-                            <div class="dropdown__option">
-                              <img src="assets/images/India.png" alt="United Kingdom" /><span>Spain</span>
-                            </div>
-
-                            <div class="dropdown__option">
-                              <img src="assets/images/India.png" alt="United Kingdom" /><span>Germany</span>
-                            </div>
-                          </div>
-                        </div>
-
-          <button type="submit" class="button-filled">Send Money</button>
-        </form>
-        <div class="footer-top">
-          <div class="logo">
-            <img src="./assets/images/logo.svg" alt="skillxchange logo" />
-          </div>
-          <nav class="menu">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about-us.html">About</a></li>
-              <li><a href="send-money.html">Send Money</a></li>
-              <li><a href="faq.html">FAQs</a></li>
-              <li><a href="contact-us.html">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-
-        <hr class="divider" />
-        <p>
-          <strong>Important:</strong> This information has been prepared for
-          distribution over the internet and without taking into account the
-          investment objectives, financial situation and particular needs of any
-          particular person. QQ Fintech Pte Ltd and its subsidiaries make no
-          recommendations as to the merits of any financial product referred to
-          in the website, email or its related websites.
-        </p>
-
-        <p>
-          <strong>Disclaimer:</strong> QQ Fintech Pte Ltd & its subsidiaries
-          makes no warranty, express or implied, concerning the suitability,
-          completeness, quality or exactness of the information and models
-          provided in this website. For further clarification, please read
-          <a href="disclaimer.html">Full Disclaimer</a>,
-          <a href="money-laundering.html">Money Laundering Statement</a> and
-          <a href="privacy-policy.html">Privacy Policy</a> statements of QQPay
-          Fintech Pte Ltd.
-        </p>
-
-        <p>&copy; QQPay 2022. All Rights Reserverd.</p>
-      </div>
-    </footer>
-    <!-- footer ends -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
 </html>
