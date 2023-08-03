@@ -571,6 +571,11 @@ p {
   transform: translateZ(10px);
   color: #FFF;
 }
+@media (max-width: 767px) {
+  .support-section {
+    margin-top: -100px;
+  }
+}
 .support-section .icon {
   background-color: transparent;
   width: 100%;
