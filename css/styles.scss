@@ -9,6 +9,9 @@
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     background: $white;
     height: 72px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
 
     .navbar-collapse {
         @media (max-width:991px) {
