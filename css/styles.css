@@ -241,6 +241,9 @@ p {
 .footer a:hover {
   border-bottom: 1px solid #F4770B;
 }
+.footer .text-license {
+  font-size: 12px;
+}
 .footer form {
   width: 500px;
   margin: 0 auto 35px;
@@ -287,23 +290,13 @@ p {
 .footer .logo img {
   width: 100%;
 }
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-@media (max-width: 767px) {
-  .footer-top {
-    flex-direction: column;
-  }
-}
 .footer .divider {
   margin-bottom: 20px;
 }
 .footer .menu ul {
   display: flex;
   margin: 0;
+  padding: 0;
 }
 @media (max-width: 767px) {
   .footer .menu ul {
