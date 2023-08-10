@@ -120,9 +120,6 @@ p {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   background: #FFF;
   height: 72px;
-  position: fixed;
-  width: 100%;
-  z-index: 99;
 }
 @media (max-width: 991px) {
   .header .navbar-collapse {
