@@ -124,6 +124,10 @@
         }
     }
 
+    .text-license {
+        font-size: 12px;
+    }
+
     form {
         width: 500px;
         margin: 0 auto 35px;
@@ -155,15 +159,6 @@
         }
     }
 
-    &-top {
-        @include display-justify-align(flex, space-between, center);
-        margin-bottom: 20px;
-
-        @media (max-width:767px) {
-            flex-direction: column;
-        }
-    }
-
     .divider {
         margin-bottom: 20px;
     }
@@ -172,6 +167,7 @@
         ul {
             display: flex;
             margin: 0;
+            padding: 0;
 
             @media (max-width:767px) {
                 flex-direction: column;
