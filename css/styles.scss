@@ -677,7 +677,8 @@
 .innerpage-banner {
     background: $white url(../assets/images/innerpage-banner.png) left top no-repeat;
     background-size: contain;
-    height: 335px;
+    height: 150px;
+    background-size: cover;
 
     @media (max-width:767px) {
         background-size: cover;
@@ -693,7 +694,7 @@
     }
 
     .title {
-        font-size: 72px;
+        font-size: 42px;
     }
 
     .breadcrumb {
@@ -1017,7 +1018,7 @@
     }
 
     .contact-form__wrapper {
-        padding: 5rem !important;
+        padding: 0 0 0 5rem !important;
     }
 }
 

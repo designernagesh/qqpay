@@ -807,7 +807,8 @@ p {
 .innerpage-banner {
   background: #FFF url(../assets/images/innerpage-banner.png) left top no-repeat;
   background-size: contain;
-  height: 335px;
+  height: 150px;
+  background-size: cover;
 }
 @media (max-width: 767px) {
   .innerpage-banner {
@@ -824,7 +825,7 @@ p {
   text-align: center;
 }
 .innerpage-banner .title {
-  font-size: 72px;
+  font-size: 42px;
 }
 .innerpage-banner .breadcrumb {
   font-size: 18px;
@@ -1168,7 +1169,7 @@ p {
     border-radius: 0.625rem 0 0.625rem 0.625rem;
   }
   .contact-form__wrapper {
-    padding: 5rem !important;
+    padding: 0 0 0 5rem !important;
   }
 }
 /*  [ Disclaimer, Laundering Statement & Privacy Policy Pages Styles Starts Here ] 
