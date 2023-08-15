@@ -243,6 +243,7 @@ p {
 }
 .footer .text-license {
   font-size: 12px;
+  display: none;
 }
 .footer form {
   width: 500px;
