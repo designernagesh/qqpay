@@ -1072,6 +1072,10 @@ p {
   transform: rotate(-90deg);
   transition: all 0.3s ease;
 }
+.faqs-section .accordion .card-body li {
+  list-style: disc;
+  margin-bottom: 10px;
+}
 
 /* 
     Contact Page Styles 
