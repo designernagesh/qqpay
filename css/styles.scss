@@ -924,6 +924,13 @@
                 }
             }
         }
+
+        .card-body {
+            li {
+                list-style: disc;
+                margin-bottom: 10px;
+            }
+        }
     }
 }
 
